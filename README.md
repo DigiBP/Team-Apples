@@ -1,7 +1,7 @@
 # Team-Apples
 Team Presentation - Apples 
 
-This document describes the contribution to the process from the company Ximiq AG as part of the course "Digitalization of Business Processes" at the University of Applied Sciences and Arts North-western Switzerland. The team members are: Revathi Ravada, Cédric Hügli, Özlem Köşker, Juan Coutink, Hossein Zamanlou 
+This document describes the contribution to the process from the company Ximiq AG as part of the course "Digitalization of Business Processes" at the University of Applied Sciences and Arts North-western Switzerland. The team members are: Revathi Ravada, Cédric Hügli, Özlem Kösker, Juan Coutink, Hossein Zamanlou 
 
 Description of the Use Case 
 
