@@ -32,3 +32,7 @@ However, if the customer orders the full license, the deal is registered in the 
 However, if the customer does pay the invoice, the full license key is generated and then sent to the customer. In this case, the opportunity is closed as won.
 
 At any point of this process, the customer can always purchase the license, the process resumes on the step “Register order in CRM”.
+
+
+Feel expression Decision task: Calculate Price
+
