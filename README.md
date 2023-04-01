@@ -1,8 +1,18 @@
 # <a href="#-team-apples"><g-emoji class="g-emoji" alias="apple" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f34c.png">🍎</g-emoji> Team Apples</a>
+## <a href="#-team-members">
+  <g-emoji class="g-emoji" alias="busts_in_silhouette" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f465.png">👥</g-emoji>
+  Team Members
+</a>
+<ul>
+  <li>Juan Coutink</li>
+  <li>Cédric Hügli</li>
+  <li>Özlem Kösker</li>
+  <li>Revathi Ravada</li>
+  <li>Hossein Zamanlou</li>
+</ul>
 
-Team Presentation - Apples 
 
-This document describes the contribution to the process from the company Ximiq AG as part of the course "Digitalization of Business Processes" at the University of Applied Sciences and Arts North-western Switzerland. The team members are: Revathi Ravada, Cédric Hügli, Özlem Kösker, Juan Coutink, Hossein Zamanlou 
+This document describes the contribution to the process from the company Ximiq AG as part of the course "Digitalization of Business Processes" at the University of Applied Sciences and Arts North-western Switzerland. 
 
 
 Description of the Use Case 
