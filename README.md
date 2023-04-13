@@ -48,6 +48,7 @@ However, if the customer does pay the invoice, the full license key is generated
 At any point of this process, the customer can always purchase the license, the process resumes on the step “Register order in CRM”.
 
 # Potential automisations and extensions
+When analysing the AS-IS process several open points are there. First of all why does the firm have 
 
 # TO-BE Process Description
 
