@@ -47,14 +47,16 @@ However, if the customer does pay the invoice, the full license key is generated
 
 At any point of this process, the customer can always purchase the license, the process resumes on the step “Register order in CRM”.
 
-#Description of Process Elements
+Description of Process Elements
 ========
 
-| Row | Picture | Description          | Comment          | Column 5          |
-| --- | ------- | ---------------- | ---------------- | ---------------- |
-| 1   |         |                  |                  |                  |
-| 2   | ![alt text](image_path) | Row 2, Column 3  | Row 2, Column 4  | 
-
+![AS-IS_Process_Description_1](https://user-images.githubusercontent.com/127504427/232119513-b4df5ba0-b13e-48c6-8511-db435e3c85a0.png)
+![AS-IS_Process_Description_2](https://user-images.githubusercontent.com/127504427/232119516-8ae475e3-bd41-4cef-8e8d-a57cf7498430.png)
+![AS-IS_Process_Description_3](https://user-images.githubusercontent.com/127504427/232119517-1816298c-d361-4250-a1bc-5973c4aa87d0.png)
+![AS-IS_Process_Description_4](https://user-images.githubusercontent.com/127504427/232119519-079ffcc8-473e-434d-8b84-3684c501b218.png)
+![AS-IS_Process_Description_5](https://user-images.githubusercontent.com/127504427/232119524-034f1ae4-6395-4f8b-ba5b-ee7e0331622c.png)
+![AS-IS_Process_Description_6](https://user-images.githubusercontent.com/127504427/232119525-6f1a9fd1-0895-46b3-8ce3-7b695a73d26c.png)
+![AS-IS_Process_Description_7](https://user-images.githubusercontent.com/127504427/232119526-f4229d96-7c2d-4571-8190-81957db2e7a8.png)
 
 
 # Potential automisations and extensions
