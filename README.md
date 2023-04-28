@@ -66,3 +66,14 @@ When analysing the AS-IS process several open points are there. First of all why
 
 # Conclusion 
 
+# Next Steps
+
+# List of Artifacts and Presentation
+Artifacts:
+  1.
+  2.
+  3.
+  4.
+  5.
+  6.
+  
