@@ -70,16 +70,13 @@ When analysing the AS-IS process several open points are there. First of all why
 
 # List of Artifacts and Presentation
 Artifacts:
-  1.
-  2.
-  3.
-  4.
-  5.
-  6.
+
  <ul>
-  <li>1. /li>
+  <li>1. </li>
   <li>2. </li>
   <li>3. </li>
   <li>4. </li>
   <li>5. </li>
 </ul>
+
+Presentation Name:
