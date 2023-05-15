@@ -48,6 +48,10 @@ However, if the customer does pay the invoice, the full license key is generated
 
 At any point of this process, the customer can always purchase the license, the process resumes on the step “Register order in CRM”.
 
+![AS-IS-PROCESS/01_AS-IS_Sales Process ADOIT RGfW.png](https://github.com/DigiBP/Team-Apples/blob/4d466a928f8c591dfe7c846aaeca9fe214f92d3c/AS-IS-PROCESS/01_AS-IS_Sales%20Process%20ADOIT%20RGfW.png)
+
+
+
 Description of AS-IS Process Elements
 ========
 
@@ -92,13 +96,14 @@ Description of AS-IS Process Elements
 
 # Potential automisations and extensions
 When analysing the AS-IS process several open points are there. First of all why does the firm have 
-
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
+.
+.
 
 
 # TO-BE Process Description
