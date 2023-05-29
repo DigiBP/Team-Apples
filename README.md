@@ -125,8 +125,8 @@ When analysing the AS-IS process several open points are there. First of all why
 Description of TO-BE Process Elements
 ========
 
-| Row | Picture        | Description                | Solution          | 
-| --- | ----------- | ---------------------- | ---------------- | 
+| Row | Picture | Description          | Solution          | 
+| --- | ------- | ---------------- | ---------------- | 
 | 1   |   ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE01.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE01.png) | During any partners download process the customer filled the contact form.   |  1. Start Event - Software request received https://github.com/DigiBP/Team-Apples#1-start-event---software-request-received| 
 | 2   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE02.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE02.png) |  Customers information is stored in CRM. | 1. Start Event - Software request received https://github.com/DigiBP/Team-Apples#1-start-event---software-request-received  | 
 | 3   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE03.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE03.png) | An initial email is sent to the customer. The email includes a link to order a 30 days free trial license as well as scheduling a Live-Demo.  | 2. Sent e-mail with URL links https://github.com/DigiBP/Team-Apples#2-sent-e-mail-with-url-links  | 
@@ -169,6 +169,7 @@ Description of TO-BE Process Elements
 | 40  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE40.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE40.png) | If the customer doesn’t pay the software request process is finish.  | Row 31, Column 4 | 
 | 41  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE41.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE41.png) |  The renewal is the automatically confirmed to the customer.   |  13. Confirm renewal https://github.com/DigiBP/Team-Apples#13-confirm-renewal   | 
 | 42  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE42.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE42.png) | The renewal is the automatically registered in CRM. | Row 31, Column 4 | 
+
 
 
 # Make-Scenarios
