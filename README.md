@@ -56,41 +56,45 @@ Description of AS-IS Process Elements
 
 | Row | Picture | Column 3          | Column 4          |
 | --- | ------- | ---------------- | ---------------- |
-| 1   | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild1.png) | Row 2, Column 3   | Row 2, Column 4   | 
-| 2   | ![AS-IS-PROCESS/Bild2.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild2.png) | Row 2, Column 3   | Row 2, Column 4   | 
-| 3   | ![AS-IS-PROCESS/Bild3.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild3.png) | Row 3, Column 3   | Row 3, Column 4   | 
-| 4   | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild4.png) | Row 4, Column 3   | Row 4, Column 4   | 
-| 5   | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild5.png) | Row 5, Column 3   | Row 5, Column 4   | 
-| 6   | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild6.png) | Row 6, Column 3   | Row 6, Column 4   | 
-| 7   | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild7.png) | Row 7, Column 3   | Row 7, Column 4   | 
-| 8   | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild8.png) | Row 8, Column 3   | Row 8, Column 4   | 
-| 9   | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild9.png) | Row 9, Column 3   | Row 9, Column 4   | 
-| 10  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild10.png) | Row 10, Column 3  | Row 10, Column 4  |
-| 11  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild11.png) | Row 11, Column 3  | Row 11, Column 4  | 
-| 12  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild12.png) | Row 12, Column 3  | Row 12, Column 4  | 
-| 13  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild13.png) | Row 13, Column 3  | Row 13, Column 4  | 
-| 14  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild14.png) | Row 14, Column 3  | Row 14, Column 4  | 
-| 15  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild15.png) | Row 15, Column 3  | Row 15, Column 4  | 
-| 16  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild16.png) | Row 16, Column 3  | Row 16, Column 4  | 
-| 17  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild17.png) | Row 17, Column 3  | Row 17, Column 4  | 
-| 18  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild18.png) | Row 18, Column 3  | Row 18, Column 4  | 
-| 19  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild19.png) | Row 19, Column 3 | Row 19, Column 4 |
-| 20  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild20.png) | Row 20, Column 3 | Row 20, Column 4 |
-| 21  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild21.png) | Row 21, Column 3 | Row 21, Column 4 |
-| 22  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild22.png) | Row 22, Column 3 | Row 22, Column 4 | 
-| 23  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild23.png) | Row 23, Column 3 | Row 23, Column 4 | 
-| 24  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild24.png) | Row 24, Column 3 | Row 24, Column 4 | 
-| 25  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild25.png) | Row 25, Column 3 | Row 25, Column 4 | 
-| 26  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild26.png) | Row 26, Column 3 | Row 26, Column 4 | 
-| 27  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild27.png) | Row 27, Column 3 | Row 27, Column 4 | 
-| 28  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild28.png) | Row 28, Column 3 | Row 28, Column 4 | 
-| 29  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild29.png) | Row 29, Column 3 | Row 29, Column 4 | 
-| 30  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild30.png) | Row 30, Column 3 | Row 30, Column 4 | 
-| 31  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild31.png) | Row 31, Column 3 | Row 31, Column 4 | 
-| 32  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild32.png) | Row 32, Column 3 | Row 32, Column 4 | 
-| 33  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild33.png) | Row 33, Column 3 | Row 33, Column 4 |
-| 34  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild34.png) | Row 34, Column 3 | Row 34, Column 4 | 
-| 35  | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild35.png) | Row 35, Column 3 | Row 35, Column 4 | 
+| 1   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS01.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS01.png) | Row 2, Column 3   | Row 2, Column 4   | 
+| 2   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS02.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS02.png) | Row 2, Column 3   | Row 2, Column 4   | 
+| 3   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS03.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS03.png) | Row 3, Column 3   | Row 3, Column 4   | 
+| 4   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS04.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS04.png) | Row 4, Column 3   | Row 4, Column 4   | 
+| 5   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS05.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS05.png) | Row 5, Column 3   | Row 5, Column 4   | 
+| 6   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS06.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS06.png) | Row 6, Column 3   | Row 6, Column 4   | 
+| 7   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS07.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS07.png) | Row 7, Column 3   | Row 7, Column 4   | 
+| 8   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS08.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS08.png) | Row 8, Column 3   | Row 8, Column 4   | 
+| 9   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS09.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS09.png) | Row 9, Column 3   | Row 9, Column 4   | 
+| 10  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS10.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS10.png) | Row 10, Column 3  | Row 10, Column 4  |
+| 11  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS11.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS11.png) | Row 11, Column 3  | Row 11, Column 4  | 
+| 12  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS12.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS12.png) | Row 12, Column 3  | Row 12, Column 4  | 
+| 13  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS13.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS13.png) | Row 13, Column 3  | Row 13, Column 4  | 
+| 14  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS14.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS14.png) | Row 14, Column 3  | Row 14, Column 4  | 
+| 15  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS15.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS15.png) | Row 15, Column 3  | Row 15, Column 4  | 
+| 16  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS16.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS16.png) | Row 16, Column 3  | Row 16, Column 4  | 
+| 17  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS17.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS17.png) | Row 17, Column 3  | Row 17, Column 4  | 
+| 18  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS18.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS18.png) | Row 18, Column 3  | Row 18, Column 4  | 
+| 19  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS19.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS19.png) | Row 19, Column 3 | Row 19, Column 4 |
+| 20  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS20.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS20.png) | Row 20, Column 3 | Row 20, Column 4 |
+| 21  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS21.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS21.png) | Row 21, Column 3 | Row 21, Column 4 |
+| 22  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS22.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS22.png) | Row 22, Column 3 | Row 22, Column 4 | 
+| 23  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS23.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS23.png) | Row 23, Column 3 | Row 23, Column 4 | 
+| 24  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS24.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS24.png) | Row 24, Column 3 | Row 24, Column 4 | 
+| 25  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS25.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS25.png) | Row 25, Column 3 | Row 25, Column 4 | 
+| 26  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS26.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS26.png) | Row 26, Column 3 | Row 26, Column 4 | 
+| 27  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS27.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS27.png) | Row 27, Column 3 | Row 27, Column 4 | 
+| 28  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS28.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS28.png) | Row 28, Column 3 | Row 28, Column 4 | 
+| 29  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS29.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS29.png) | Row 29, Column 3 | Row 29, Column 4 | 
+| 30  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS30.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS30.png) | Row 30, Column 3 | Row 30, Column 4 | 
+| 31  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS31.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS31.png) | Row 31, Column 3 | Row 31, Column 4 | 
+| 32  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS32.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS32.png) | Row 32, Column 3 | Row 32, Column 4 | 
+| 33  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS33.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS33.png) | Row 33, Column 3 | Row 33, Column 4 |
+| 34  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS34.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS34.png) | Row 34, Column 3 | Row 34, Column 4 | 
+| 35  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS35.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS35.png) | Row 35, Column 3 | Row 35, Column 4 |
+| 36  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS36.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS36.png) | Row 35, Column 3 | Row 35, Column 4 |
+| 37  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS37.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS37.png) | Row 35, Column 3 | Row 35, Column 4 |
+
+
 
 
 
