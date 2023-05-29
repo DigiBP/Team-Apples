@@ -172,7 +172,8 @@ Description of TO-BE Process Elements
 
 
 
-# Make-Scenarios
+# Make (formerly Integromat) -Scenarios
+In order to automate the above TOBE BPMN process Integromat has been use to visually create, build and automate the workflow. 
 ## 1. Start Event - Software request received
 ![TO-BE-PROCESS/MAKE-Screenshots/1. Start Event - Software request received.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/1.%20Start%20Event%20-%20Software%20request%20received.png)
 
