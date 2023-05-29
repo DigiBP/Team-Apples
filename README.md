@@ -54,8 +54,8 @@ At any point of this process, the customer can always purchase the license, the 
 Description of AS-IS Process Elements
 ========
 
-| Row | Picture | Column 3          | Column 4          | Column 5          |
-| --- | ------- | ---------------- | ---------------- | ---------------- |
+| Row | Picture | Column 3          | Column 4          |
+| --- | ------- | ---------------- | ---------------- |
 | 1   | ![AS-IS-PROCESS/Bild1.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild1.png) | Row 2, Column 3   | Row 2, Column 4   | 
 | 2   | ![AS-IS-PROCESS/Bild2.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild2.png) | Row 2, Column 3   | Row 2, Column 4   | 
 | 3   | ![AS-IS-PROCESS/Bild3.png](https://github.com/DigiBP/Team-Apples/blob/3d0da9e0d0aa43616acadb324b1f08d5aad8b057/AS-IS-PROCESS/Bild3.png) | Row 3, Column 3   | Row 3, Column 4   | 
