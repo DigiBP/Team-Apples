@@ -244,9 +244,9 @@ In order to automate the above TOBE BPMN process Integromat has been use to visu
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/4.%20Examples.png"  width="50%" height="50%">
 
-<img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/5.%20Examples.png"  width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/5.%20Examples.png"  width="35%" height="35%">
 
-<img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/6.%20Examples.png"  width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/6.%20Examples.png"  width="35%" height="35%">
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/7.%20wix.com.png"  width="50%" height="50%">
 
