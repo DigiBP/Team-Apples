@@ -170,6 +170,50 @@ Description of TO-BE Process Elements
 | 41  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE41.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE41.png) | Row 31, Column 3 | Row 31, Column 4 | 
 | 42  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE42.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE42.png) | Row 31, Column 3 | Row 31, Column 4 | 
 
+# Make-Scenarios
+## 1. Start Event - Software request received
+![TO-BE-PROCESS/MAKE-Screenshots/1. Start Event - Software request received.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/1.%20Start%20Event%20-%20Software%20request%20received.png)
+
+## 2. Sent e-mail with URL links
+![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
+
+## 3. Order free trial license key message
+![TO-BE-PROCESS/MAKE-Screenshots/3. Order free trial license key message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/3.%20Order%20free%20trial%20license%20key%20message.png)
+
+## 4. Generate free trial license
+![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
+
+## 5. Sent free trial license
+![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
+
+## 6. Sent License key order form URL
+![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
+
+## 7. Order received message
+![TO-BE-PROCESS/MAKE-Screenshots/7. Order received message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/7.%20Order%20received%20message.png)
+
+## 8. Create Invoice and send
+![TO-BE-PROCESS/MAKE-Screenshots/8. Create Invoice and send.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/8.%20Create%20Invoice%20and%20send.png)
+
+## 9. Generate license key
+![TO-BE-PROCESS/MAKE-Screenshots/9. Generate license key.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/9.%20Generate%20license%20key.png)
+
+## 10. Sent license key
+![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
+
+## 11. Sent license renewal form URL
+![TO-BE-PROCESS/MAKE-Screenshots/11. Sent license renewal form URL.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/11.%20Sent%20license%20renewal%20form%20URL.png)
+
+## 12. Renewing request received
+![TO-BE-PROCESS/MAKE-Screenshots/12. Renewing request received.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/12.%20Renewing%20request%20received.png)
+
+## 13. Confirm renewal
+![TO-BE-PROCESS/MAKE-Screenshots/13. Confirm renewal.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/13.%20Confirm%20renewal.png)
+
+
+
+# Chatbot
+
 
 
 
