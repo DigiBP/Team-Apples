@@ -224,15 +224,29 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data.
 - As part of the workflow, an email is automatically sent to the client. The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated license key.
 
-The email is sent to the client, providing them with the necessary information about the free trial license, including the license key.
 ![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
 
 ## 6. Sent License key order form URL
+- The client has a 30-day free trial license and once that is expired this scenario calculates with "Tool" modules the number of remaining days. 
+- It calculates today minus the license start date and defines if it is expired or not.
+- Once the remaining days are zero, an email is automatically sent to the client.
+- The email contains a URL that directs the client to a Google form where they can order the one-year license key.
+- To accomplish this, the scenario utilizes two HTTP make a request steps: fetch and lock, and complete in order to communicate with Camunda and make sure the correct business key is processed. 
+- After composing the email, the scenario completes the HTTP request by sending the email to the client.
+- The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
+
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/6.%20Difference.png"  width="50%" height="50%">
 
 ## 7. Order received message
+- The client is given the option to request a one yearly license, which is no longer free.
+- If the client decides to proceed with the yearly license, they fill out a form indicating their intention.
+- The "Watch New Row" module detects the new row or entry in the form.
+- The "Watch New Row" module triggers an intermediate catching message event in Camunda.
+- The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a yearly license key.
+- Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow. 
+
 ![TO-BE-PROCESS/MAKE-Screenshots/7. Order received message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/7.%20Order%20received%20message.png)
 
 ## 8. Create Invoice and send
