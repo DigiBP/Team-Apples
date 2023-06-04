@@ -176,11 +176,11 @@ Description of TO-BE Process Elements
 In order to automate the above TOBE BPMN process Integromat has been used to visually create, build and automate the workflow. The scenarios are created by process engine and added to the "external task list" and external worker queries the topic, locks the task, works on it and completes the service task. 
 
 ## 1. Start Event - Software request received
-1. The starting scenario involves watching for new rows in a Google Sheet, which serves as the CRM (Customer Relationship Management) system for XIMIQ.
-2. When a new row is detected in the Google Sheet, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
-3. As part of the process instantiation, a new business key is generated. The business key is a unique identifier associated with the process instance and can be used for tracking or referencing purposes.
-4. The information related to the new business key is then sent via an external worker to Camunda. The external worker acts as an interface between the external systems (such as the Google Sheet) and Camunda, allowing for the execution of specific tasks within the workflow.
-5. Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with its predefined steps, such as executing user tasks, making decisions, or invoking external services.
+- The starting scenario involves watching for new rows in a Google Sheet, which serves as the CRM (Customer Relationship Management) system for XIMIQ.
+- When a new row is detected in the Google Sheet, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
+- As part of the process instantiation, a new business key is generated. The business key is a unique identifier associated with the process instance and can be used for tracking or referencing purposes.
+- The information related to the new business key is then sent via an external worker to Camunda. The external worker acts as an interface between the external systems (such as the Google Sheet) and Camunda, allowing for the execution of specific tasks within the workflow.
+- Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with its predefined steps, such as executing user tasks, making decisions, or invoking external services.
 
 ![TO-BE-PROCESS/MAKE-Screenshots/1. Start Event - Software request received.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/1.%20Start%20Event%20-%20Software%20request%20received.png)
 
@@ -191,9 +191,23 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 
 ## 2. Sent e-mail with URL links
+- When a new registry is added to the CRM (Customer Relationship Management) system, a trigger is initiated.
+- An email is automatically generated using the "Send an Email" module. The email includes details retrieved from the CRM, such as customer information, order details, or any other relevant data.
+- The email is sent to the client without any human interaction. This step is automated, meaning that the system handles it automatically without requiring manual intervention.
+- After sending the email, the workflow proceeds to the next step, which involves making an HTTP request to fetch and lock information from Camunda. This could be a service task that retrieves additional data or performs a specific action using an API provided by Camunda.
+- The fetched information is then used to complete the service task or execute a specific action. This could involve processing the data, performing calculations, or integrating with other systems.
+- Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow based on the completed task.
+
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
 ## 3. Order free trial license key message
+- The client is given the option to request a free trial license.
+- If the client decides to proceed with the free trial, they fill out a form indicating their intention.
+- The "Watch New Row" module detects the new row or entry in the form.
+- The "Watch New Row" module triggers an intermediate catching message event in Camunda.
+- The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a free trial license.
+- Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow. 
+
 ![TO-BE-PROCESS/MAKE-Screenshots/3. Order free trial license key message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/3.%20Order%20free%20trial%20license%20key%20message.png)
 
 ## 4. Generate free trial license
