@@ -200,7 +200,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 
-<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/02_License_Renewal.png" width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/blob/b46ba03d6847fcf93072fb754b7cca9defc1a79e/TO-BE-PROCESS/Google-Forms-Screenshots/02_Free_Trial_License.png" width="50%" height="50%">
 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png)
 
@@ -300,7 +300,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
-<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/11_License_Renewal.png" width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/blob/b46ba03d6847fcf93072fb754b7cca9defc1a79e/TO-BE-PROCESS/Google-Forms-Screenshots/11_License_renewal.png" width="50%" height="50%">
 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png)
 
