@@ -322,25 +322,49 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 
 # Chatbot
+The Chatbot helps to solve any potential problem the customers may face throughout the sales cycle using an interactive frontend website. These are issues such as:
+- Accessing ordering forms for our software license: trial, purchase and renewal
+- Difficulties to use the software
+- Licenses were not sent to the customer/ didn’t receive/lost them
+- The customer needs to talk chat/video call with us
+- The customer doesn’t receive/understand our invoices
 
-<img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/1.%20Customer%20Service%20Chatbot.png"  width="75%" height="75%">
+Solutions were mapped all along sales cycle to ensure the customer always gets an answer. More than 17 different type of problems were identified with at least 4 different inputs from the customer.
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/2.%20What%20it%20solves.png"  width="90%" height="90%">
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/3.%20What%20it%20solves.png"  width="90%" height="90%">
 
+Here are some chat hisory examples: 
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/4.%20Examples.png"  width="30%" height="30%"> <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/5.%20Examples.png"  width="30%" height="30%"> <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/6.%20Examples.png"  width="30%" height="30%">
 
+The following tools were used:
+- Frontend using WIX.com website and HTML code to add Kommunicate.io as a widget
+- Chatbot Interface using Kommunicate.io
+- Webhooks using Make.com to Fill Google sheets, search rows and use Reponse fulfillment
+- Chatbot natural language understanding platform using Google Dialogflow
+
+The following automations were done:
+- Provides user Manual to Customer - integrated link
+- Records Company ID and email in Google Sheets for Customer Service get in contact with client
+- In case the customer urgently needs assistance, it automatically handsover the conversation to a live agent using Kommunicate.io.
+- Provides customer's trial license in case they didnt get it, using search rows and response fulfillment
+- Provides an appointment scheduler using Google Calendar in case customer needs to reschedule or missed the live demo - integrated link
+
+### WIX.com
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/7.%20wix.com.png"  width="90%" height="90%">
 
+### Kommunicate.io
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/8.%20Kommunikate.io.png"  width="90%" height="90%">
 
+### Dialugflow
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Chatbot%20-%20Make%20Screenshot.png"  width="90%" height="90%">
 
+### make.com
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/9.%20Dialogflow.png"  width="90%" height="90%">
 
-
-
+### Google Calendar, Google Forms, Google Sheets
+<img src="https://github.com/DigiBP/Team-Apples/blob/73a2b174b6e706d5762de81f862105f0b9e240ee/CHATBOT-Files/Screenshots/10.%20Google%20Calendar%2C%20Forms%2C%20Sheet.png"  width="90%" height="90%">
 
 # Conclusion 
 
