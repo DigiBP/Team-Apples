@@ -211,9 +211,20 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ![TO-BE-PROCESS/MAKE-Screenshots/3. Order free trial license key message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/3.%20Order%20free%20trial%20license%20key%20message.png)
 
 ## 4. Generate free trial license
+- The free trial license is being generated using a UUID (Universally Unique Identifier). A UUID is a unique identifier that ensures each generated license has a distinct value.
+- After generating the free trial license with the UUID, the generated license information is written back into the CRM (Customer Relationship Management) system.
+- Writing the license information back into the CRM allows for proper tracking and management of the free trial licenses. It ensures that the generated licenses are associated with the respective clients or organizations.
+- The CRM system can store the generated license information, including the UUID, client details, and any other relevant information tied to the free trial license.
+
 ![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
 
 ## 5. Sent free trial license
+- The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock relevant information, including the license key, from a Google Sheet or CRM system.
+- The HTTP request fetches the necessary details from the Google Sheet or CRM system, such as the client's information and the generated license key.
+- Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data.
+- As part of the workflow, an email is automatically sent to the client. The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated license key.
+
+The email is sent to the client, providing them with the necessary information about the free trial license, including the license key.
 ![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
 
 ## 6. Sent License key order form URL
