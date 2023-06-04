@@ -175,6 +175,10 @@ Description of TO-BE Process Elements
 # Make (formerly Integromat) -Scenarios
 In order to automate the above TOBE BPMN process Integromat has been used to visually create, build and automate the workflow. The scenarios are created by process engine and added to the "external task list" and external worker queries the topic, locks the task, works on it and completes the service task. 
 
+![TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png)
+
+![TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png)
+
 ## 1. Start Event - Software request received
 - The starting scenario involves watching for new rows in a Google Sheet, which serves as the CRM (Customer Relationship Management) system for XIMIQ.
 - When a new row is detected in the Google Sheet, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
@@ -198,6 +202,10 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - The fetched information is then used to complete the service task or execute a specific action. This could involve processing the data, performing calculations, or integrating with other systems.
 - Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow based on the completed task.
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
+![TO-BE-PROCESS/Google-Forms-Screenshots/02_License_Renewal.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/02_License_Renewal.png)
+
+![TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png)
 
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
@@ -239,6 +247,10 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - The e-mail always refers to the Chatbot  in case the client has issues or questions he can get in touch with the Chatbot. 
 
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
+
+![TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering final License.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png)
+
+![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/6.%20Difference.png"  width="50%" height="50%">
 
@@ -290,6 +302,10 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ## 11. Sent license renewal form URL
 
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
+![TO-BE-PROCESS/Google-Forms-Screenshots/11_License_Renewal.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/11_License_Renewal.png)
+
+![TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png)
 
 ![TO-BE-PROCESS/MAKE-Screenshots/11. Sent license renewal form URL.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/11.%20Sent%20license%20renewal%20form%20URL.png)
 
