@@ -104,14 +104,8 @@ Description of AS-IS Process Elements
 
 # Potential automisations and extensions
 When analysing the AS-IS process several open points are there. First of all why does the firm have 
-.
-.
-.
-.
-.
-.
-.
-.
+
+![AS-IS-PROCESS/02_Wastes in AS-IS Process.png](https://github.com/DigiBP/Team-Apples/blob/3dc488e1addcc066fbbe203cab2336ef6cbf9227/AS-IS-PROCESS/02_Wastes%20in%20AS-IS%20Process.png)
 
 
 # TO-BE Process Description
