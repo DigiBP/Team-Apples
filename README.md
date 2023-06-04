@@ -117,7 +117,7 @@ When analysing the AS-IS process several open points are there. First of all why
 # TO-BE Process Description
 
 
-![TO-BE-PROCESS/01_TO-BE_Sales Process ADOIT RGfW.png](https://github.com/DigiBP/Team-Apples/blob/6bca72e9c4b8127b2efd3ab2ec582e0f63ea8a77/TO-BE-PROCESS/01_TO-BE_Sales%20Process%20ADOIT%20RGfW.png)
+![TO-BE-PROCESS/01_TO-BE_Sales Process ADOIT Report Generator for Word.png](https://github.com/DigiBP/Team-Apples/blob/420ef52f89b387d3727006403113fcd08eb692cd/TO-BE-PROCESS/01_TO-BE_Sales%20Process%20ADOIT%20Report%20Generator%20for%20Word.png)
 
 
 
