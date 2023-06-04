@@ -355,15 +355,13 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 
 
+
 # List of Artifacts and Presentation
 Artifacts:
 
- <ul>
-  <li>1. </li> [BPMN-Files(AS-IS & TO-BE)](https://github.com/DigiBP/Team-Apples/tree/7039123b9bc3fcf6a66b3b344da042b0b520210b/BPMN-Files) 
-  <li>2. </li> ![MAKE-Blueprint Exports](Make-Scenario-Blueprints)) 
-  <li>3. </li>
-  <li>4. </li>
-  <li>5. </li>
-</ul>
-
-Presentation Name:
+1. [BPMN-Files (AS-IS & TO-BE)](https://github.com/DigiBP/Team-Apples/tree/8f019e16a5874df54c8768ca8b76a117889c4a79/BPMN-Files)
+2. [MAKE-Scenario Blueprints (.json)](https://github.com/DigiBP/Team-Apples/tree/8f019e16a5874df54c8768ca8b76a117889c4a79/MAKE-Blueprint%20Exports)
+3. [Workflow-Documentation Video (download)](https://github.com/DigiBP/Team-Apples/blob/8f019e16a5874df54c8768ca8b76a117889c4a79/TO-BE-PROCESS/02_TO-BE_Sales%20Process%20Video%20Documentation.mp4)
+5. [Chatbot-Documantation PPT (download)](https://github.com/DigiBP/Team-Apples/blob/8f019e16a5874df54c8768ca8b76a117889c4a79/CHATBOT-Files/ADOIT%20RGfW%20Chatbot%20documentation.pptx)
+6. [Chatbot-Documantation Video (download)](https://github.com/DigiBP/Team-Apples/blob/8f019e16a5874df54c8768ca8b76a117889c4a79/CHATBOT-Files/ADOIT%20RGfW%20Chatbot%20demonstration%20video.mp4)
+7. Final Presentation PPT: will be uploaded in Moodle and contains log-in details the google account used for the external services.
