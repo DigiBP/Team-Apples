@@ -226,7 +226,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - As part of the workflow, an email is automatically sent to the client. The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated license key.
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
-![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
+![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
 
 ## 6. Sent License key order form URL
 - The client has a 30-day free trial license and once that is expired this scenario calculates with "Tool" modules the number of remaining days. 
@@ -285,7 +285,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - With this scenario the license key is retrieved from the CRM and sent via E-mail to the client. 
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
-![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
+![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
 
 ## 11. Sent license renewal form URL
 
