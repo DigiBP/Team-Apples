@@ -359,7 +359,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 Artifacts:
 
  <ul>
-  <li>1. </li> ![BPMN-Files](BPMN-Files(AS-IS & TO-BE)) 
+  <li>1. </li> [BPMN-Files(AS-IS & TO-BE)](https://github.com/DigiBP/Team-Apples/tree/7039123b9bc3fcf6a66b3b344da042b0b520210b/BPMN-Files) 
   <li>2. </li> ![MAKE-Blueprint Exports](Make-Scenario-Blueprints)) 
   <li>3. </li>
   <li>4. </li>
