@@ -197,6 +197,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - After sending the email, the workflow proceeds to the next step, which involves making an HTTP request to fetch and lock information from Camunda. This could be a service task that retrieves additional data or performs a specific action using an API provided by Camunda.
 - The fetched information is then used to complete the service task or execute a specific action. This could involve processing the data, performing calculations, or integrating with other systems.
 - Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow based on the completed task.
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
@@ -223,6 +224,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - The HTTP request fetches the necessary details from the Google Sheet or CRM system, such as the client's information and the generated license key.
 - Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data.
 - As part of the workflow, an email is automatically sent to the client. The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated license key.
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 ![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
 
@@ -234,6 +236,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - To accomplish this, the scenario utilizes two HTTP make a request steps: fetch and lock, and complete in order to communicate with Camunda and make sure the correct business key is processed. 
 - After composing the email, the scenario completes the HTTP request by sending the email to the client.
 - The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
+- The e-mail always refers to the Chatbot  in case the client has issues or questions he can get in touch with the Chatbot. 
 
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
 
@@ -250,6 +253,17 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ![TO-BE-PROCESS/MAKE-Screenshots/7. Order received message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/7.%20Order%20received%20message.png)
 
 ## 8. Create Invoice and send
+- The scenario initiates an HTTP make a request step to fetch and lock the business key and topic name from Camunda. This step allows the workflow to access the necessary information for further processing.
+- With the fetched information, the scenario proceeds to create an Invoice Number. This could involve generating a unique identifier or following a specific numbering scheme.
+- Additionally, the scenario generates a Barcode associated with the invoice. This Barcode serves as a reference for scanning purposes.
+- The Barcode is saved in Google Drive. This step ensures that the Barcode is securely stored and can be easily accessed or referenced later in the payment information.
+- The scenario continues by creating an invoice using the generated Invoice Number and Barcode. The invoice contains relevant details such as client ID, product name, pricing, and Invoice Number. 
+- The created invoice is saved as a PDF file. This allows for easy sharing, printing, and archiving of the invoice document.
+- The scenario writes back the Invoice Number and the document ID of the saved invoice in Google Sheet. This step updates the Google Sheet with the relevant invoice information for tracking and reference purposes.
+- An email is then sent to the recipient, attaching the generated invoice as a PDF file. The e-mail includes the details of the payment. 
+- Finally, the scenario completes the process with another HTTP make a request, indicating the successful completion of the workflow.
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 ![TO-BE-PROCESS/MAKE-Screenshots/8. Create Invoice and send.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/8.%20Create%20Invoice%20and%20send.png)
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Gmail.png"  width="50%" height="50%">
@@ -260,18 +274,32 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 
 ## 9. Generate license key
+- The client decides to purchase a license key after paying for it.
+- Once the payment is completed, a new license key is generated.
+- The generated license key is then written back into the CRM (Customer Relationship Management) system.
+- The license key is associated with the client's credentials in the CRM system, ensuring it is properly linked to the client's profile.
+
 ![TO-BE-PROCESS/MAKE-Screenshots/9. Generate license key.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/9.%20Generate%20license%20key.png)
 
 ## 10. Sent license key
+- With this scenario the license key is retrieved from the CRM and sent via E-mail to the client. 
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 ![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
 
 ## 11. Sent license renewal form URL
+
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 ![TO-BE-PROCESS/MAKE-Screenshots/11. Sent license renewal form URL.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/11.%20Sent%20license%20renewal%20form%20URL.png)
 
 ## 12. Renewing request received
 ![TO-BE-PROCESS/MAKE-Screenshots/12. Renewing request received.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/12.%20Renewing%20request%20received.png)
 
 ## 13. Confirm renewal
+
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 ![TO-BE-PROCESS/MAKE-Screenshots/13. Confirm renewal.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/13.%20Confirm%20renewal.png)
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/13.%20Date%20to%20String.png"  width="50%" height="50%">
