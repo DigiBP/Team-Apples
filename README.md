@@ -175,7 +175,9 @@ Description of TO-BE Process Elements
 # Make (formerly Integromat) -Scenarios
 In order to automate the above TOBE BPMN process Integromat has been used to visually create, build and automate the workflow. The scenarios are created by process engine and added to the "external task list" and external worker queries the topic, locks the task, works on it and completes the service task. 
 
-![TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png)
+
+
+![TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png]<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png"  width="50%" height="50%">
 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png)
 
@@ -203,7 +205,8 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow based on the completed task.
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
-![TO-BE-PROCESS/Google-Forms-Screenshots/02_License_Renewal.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/02_License_Renewal.png)
+
+![TO-BE-PROCESS/Google-Forms-Screenshots/02_License_Renewal.png]<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/02_License_Renewal.png" width="50%" height="50%">
 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png)
 
@@ -248,7 +251,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
 
-![TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering final License.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png)
+![TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering final License.png]<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png" width="50%" height="50%">
 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
 
@@ -303,7 +306,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
-![TO-BE-PROCESS/Google-Forms-Screenshots/11_License_Renewal.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/11_License_Renewal.png)
+![TO-BE-PROCESS/Google-Forms-Screenshots/11_License_Renewal.png]<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/11_License_Renewal.png" width="50%" height="50%">
 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png)
 
@@ -347,14 +350,17 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 # Conclusion 
 
-# Next Steps
+
+
+
+
 
 # List of Artifacts and Presentation
 Artifacts:
 
  <ul>
-  <li>1. </li>
-  <li>2. </li>
+  <li>1. </li> ![BPMN-Files](BPMN-Files(AS-IS & TO-BE)) 
+  <li>2. </li> ![MAKE-Blueprint Exports](Make-Scenario-Blueprints)) 
   <li>3. </li>
   <li>4. </li>
   <li>5. </li>
