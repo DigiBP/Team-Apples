@@ -52,7 +52,7 @@ At any point of this process, the customer can always purchase the license, the 
 
 
 
-Description of AS-IS Process Elements and possible Solution / Comments
+Description of AS-IS Process Elements, Problems and Possible Improvements
 ========
 
 | Row | Picture | Description          | Problems & Possible Improvements          |
@@ -125,7 +125,7 @@ When analysing the AS-IS process several questions came up.
 Description of TO-BE Process Elements and Final Solutions
 ========
 
-| Row | Picture | Description          | Solution/Comment          | 
+| Row | Picture | Description          | Solution / Comment          | 
 | --- | ------- | ---------------- | ---------------- | 
 | 1   |   ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE01.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE01.png) | During any partners download process the customer filled the contact form.   |  1. Start Event - Software request received https://github.com/DigiBP/Team-Apples#1-start-event---software-request-received| 
 | 2   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE02.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE02.png) |  Customers information is stored in CRM. | 1. Start Event - Software request received https://github.com/DigiBP/Team-Apples#1-start-event---software-request-received  | 
