@@ -52,7 +52,7 @@ At any point of this process, the customer can always purchase the license, the 
 
 
 
-Description of AS-IS Process Elements
+Description of AS-IS Process Elements and possible Solution / Comments
 ========
 
 | Row | Picture | Description          | Problems & Possible Improvements          |
@@ -102,7 +102,7 @@ Description of AS-IS Process Elements
 
 
 
-# Potential automisations and extensions
+# AS-IS Business Process issues 
 When analysing the AS-IS process several questions came up. 
 - First of all Ximiq has a lot of waste in its sales process. 
 - Besides some automated tasks in the process most of the tasks are manually and the clients have no added value for themselves. 
@@ -122,7 +122,7 @@ When analysing the AS-IS process several questions came up.
 
 
 
-Description of TO-BE Process Elements
+Description of TO-BE Process Elements and Final Solutions
 ========
 
 | Row | Picture | Description          | Solution/Comment          | 
@@ -172,7 +172,7 @@ Description of TO-BE Process Elements
 
 
 
-# Make (formerly Integromat) -Scenarios
+# Make (formerly Integromat) - Scenarios
 In order to automate the above TOBE BPMN process Integromat has been used to visually create, build and automate the workflow. The scenarios are created by process engine and added to the "external task list" and external worker queries the topic, locks the task, works on it and completes the service task. 
 
 
