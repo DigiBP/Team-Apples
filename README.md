@@ -205,21 +205,18 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 
-<img src="https://github.com/DigiBP/Team-Apples/blob/b46ba03d6847fcf93072fb754b7cca9defc1a79e/TO-BE-PROCESS/Google-Forms-Screenshots/02_Free_Trial_License.png" width="50%" height="50%">
-
-![TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png)
-
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/02_Software%20Request.png" width="50%" height="50%">
 
 ## 3. Order free trial license key message
-- The client is given the option to request a free trial license.
-- If the client decides to proceed with the free trial, they fill out a form indicating their intention.
-- The "Watch New Row" module detects the new row or entry in the form.
-- The "Watch New Row" module triggers an intermediate catching message event in Camunda.
-- The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a free trial license.
+- The client is given the option to request a free trial license via Google Form.
+- The "Watch New Row" module detects the new entry in Google Sheet.
+- The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a free trial license via a message post.
 - Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow. 
+
+### Google Form
+<img src="https://github.com/DigiBP/Team-Apples/blob/b46ba03d6847fcf93072fb754b7cca9defc1a79e/TO-BE-PROCESS/Google-Forms-Screenshots/02_Free_Trial_License.png" width="50%" height="50%">
 
 ![TO-BE-PROCESS/MAKE-Screenshots/3. Order free trial license key message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/3.%20Order%20free%20trial%20license%20key%20message.png)
 
@@ -230,6 +227,9 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - The CRM system can store the generated license information, including the UUID, client details, and any other relevant information tied to the free trial license.
 
 ![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
+
+### CRM - Google Sheet Free Trial License
+![TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png)
 
 ## 5. Sent free trial license
 - The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock relevant information, including the license key, from a Google Sheet or CRM system.
