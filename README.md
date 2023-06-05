@@ -374,8 +374,9 @@ The following automations were done:
 <img src="https://github.com/DigiBP/Team-Apples/blob/73a2b174b6e706d5762de81f862105f0b9e240ee/CHATBOT-Files/Screenshots/10.%20Google%20Calendar%2C%20Forms%2C%20Sheet.png"  width="90%" height="90%">
 
 # Conclusion 
-
-
+The process has been improved massively and if Ximiq would give the Group Apples the time used for each user task the Group could have calculated the 
+Flow Efficiency (%) = Value added Time   / Process Lead Time (total time needed to fulfill a customer order) 
+Looking at all the manual tasks that probably costed a lot of time the flow efficiency with the TOBE process is massivelly better than the AS-IS process. 
 
 
 
