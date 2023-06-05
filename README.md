@@ -110,6 +110,7 @@ When analysing the AS-IS process to do a lean process improvement several questi
 - There is a lot of transportation wast, wasted potentials of Consultants and Accountants, waiting time for the client and over-processing such as sending reminders to clients. 
 - The 3 trigger points seem not to be synchronized and needs to be merged at some point manually. 
 - Accounting seems to do everything manually and there is again a transportation between Accounting and Consulting department. 
+- Several tasks are not automated and the Consultants do not receive any reminders to make sure to contact the client after e.g. 30 days of trial license. 
 
 ![AS-IS-PROCESS/02_Wastes in AS-IS Process.png](https://github.com/DigiBP/Team-Apples/blob/3dc488e1addcc066fbbe203cab2336ef6cbf9227/AS-IS-PROCESS/02_Wastes%20in%20AS-IS%20Process.png)
 
