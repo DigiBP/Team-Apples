@@ -171,12 +171,11 @@ Description of TO-BE Process Elements and Final Solutions
 | 41  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE41.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE41.png) |  The renewal is the automatically confirmed to the customer.   |  13. Confirm renewal https://github.com/DigiBP/Team-Apples#13-confirm-renewal   | 
 | 42  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE42.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE42.png) | The renewal is the automatically registered in CRM. | 13. Confirm renewal https://github.com/DigiBP/Team-Apples#13-confirm-renewal  | 
 
-
-
 # Make (formerly Integromat) - Scenarios
 In order to automate the above TOBE BPMN process Integromat has been used to visually create, build and automate the workflow. The scenarios are created by process engine and added to the "external task list" and external worker queries the topic, locks the task, works on it and completes the service task. 
 
 ## 1. Start Event - Software request received
+- When client decides to request the software, they will fill in a Google Form as a starting point.
 - The starting scenario involves watching for new rows in a Google Sheet, which serves as the CRM (Customer Relationship Management) system for XIMIQ.
 - When a new row is detected in the Google Sheet, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
 - As part of the process instantiation, a new business key is generated. The business key is a unique identifier associated with the process instance and can be used for tracking or referencing purposes.
@@ -185,8 +184,10 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png"  width="50%" height="50%">
 
+### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/1. Start Event - Software request received.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/1.%20Start%20Event%20-%20Software%20request%20received.png)
 
+### CRM - Google Sheet Starting Data
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png)
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/1.%20Generate%20Client%20ID.png" width="50%" height="50%">
