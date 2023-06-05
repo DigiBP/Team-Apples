@@ -102,8 +102,8 @@ Description of AS-IS Process Elements, Problems and Possible Improvements
 
 
 
-# AS-IS Business Process issues 
-When analysing the AS-IS process several questions came up. 
+# AS-IS Business Process Problems 
+When analysing the AS-IS process to do a lean process improvement several questions came up. 
 - First of all Ximiq has a lot of waste in its sales process. 
 - Besides some automated tasks in the process most of the tasks are manually and the clients have no added value for themselves. 
 - The only value adding tasks in the process are the Demo done by the Consultant for the client, the license keys the client receives and the price information. 
