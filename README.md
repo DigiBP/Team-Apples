@@ -213,6 +213,8 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
+![TO-BE-PROCESS/E-Mail-Schreenshots/02_Software Request.png](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/02_Software%20Request.png)
+
 ## 3. Order free trial license key message
 - The client is given the option to request a free trial license.
 - If the client decides to proceed with the free trial, they fill out a form indicating their intention.
@@ -240,6 +242,8 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 ![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
 
+![TO-BE-PROCESS/E-Mail-Schreenshots/05_Fee Trial License Key.png](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/05_Fee%20Trial%20License%20Key.png)
+
 ## 6. Sent License key order form URL
 - The client has a 30-day free trial license and once that is expired this scenario calculates with "Tool" modules the number of remaining days. 
 - It calculates today minus the license start date and defines if it is expired or not.
@@ -257,6 +261,8 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
 
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
+
+![TO-BE-PROCESS/E-Mail-Schreenshots/06_Free License expired Link to order yearly License.png](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/06_Free%20License%20expired%20Link%20to%20order%20yearly%20License.png)
 
 ## 7. Order received message
 - The client is given the option to request a one yearly license, which is no longer free.
@@ -288,6 +294,9 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Barcode.png"  width="50%" height="50%">
 
+![TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice Number.png](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png)
+
+![TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice (Attachment).png](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20(Attachment).png)
 
 ## 9. Generate license key
 - The client decides to purchase a license key after paying for it.
@@ -303,6 +312,8 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 ![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
 
+![TO-BE-PROCESS/E-Mail-Schreenshots/10_License Key.png](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/10_License%20Key.png)
+
 ## 11. Sent license renewal form URL
 
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
@@ -312,6 +323,8 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png)
 
 ![TO-BE-PROCESS/MAKE-Screenshots/11. Sent license renewal form URL.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/11.%20Sent%20license%20renewal%20form%20URL.png)
+
+![TO-BE-PROCESS/E-Mail-Schreenshots/11_License Key expiration in 30 days.png](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/11_License%20Key%20expiration%20in%2030%20days.png)
 
 ## 12. Renewing request received
 ![TO-BE-PROCESS/MAKE-Screenshots/12. Renewing request received.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/12.%20Renewing%20request%20received.png)
@@ -326,7 +339,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/13.%20Format%20Date.png"  width="50%" height="50%">
 
-
+![TO-BE-PROCESS/E-Mail-Schreenshots/13_Confirmation renewal License Key.png](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/13_Confirmation%20renewal%20License%20Key.png)
 
 # Chatbot
 The Chatbot helps to solve any potential problem the customers may face throughout the sales cycle using an interactive frontend website. These are issues such as:
