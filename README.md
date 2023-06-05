@@ -18,11 +18,11 @@ This document describes the contribution to the process from the company Ximiq A
 
 # Description of the Use Case 
 
-Ximiq was founded in 2013 as a Consulting Firm with the objective of working with customer as partners. The aim of Ximiq is to align Business and IT. This is done through Enterprise Architecture Management. While supporting one of our customers in EAM, we realized the need to automatically generate reports from the Enterprise Architecture Modelling Tools. At this point, Ximiq developed the ADOIT Report Generator for Microsoft Word. Thanks to the ADOIT Report Generator for Word customers are able to flexibly and quickly create architecture documentation in Microsoft Word by data sourced live from ADOIT. Customers can create their own template structure for their individual use cases or existing project management templates (e.g. Hermes) and create deliverables automatically. Instead of compiling their lists and data manually, customers can have it automatically inserted and updated from one single reliable source. 
+Ximiq was founded in 2013 as a Consulting Firm with the objective of working with customer as partners. The aim of Ximiq is to align Business and IT. This is done through Enterprise Architecture Management. While supporting one of their customers in EAM, Ximiq realized the need to automatically generate reports from the Enterprise Architecture Modelling Tools. At this point, Ximiq developed the ADOIT Report Generator for Microsoft Word. Thanks to the ADOIT Report Generator for Word customers are able to flexibly and quickly create architecture documentation in Microsoft Word by data sourced live from ADOIT. Customers can create their own template structure for their individual use cases or existing project management templates (e.g. Hermes) and create deliverables automatically. Instead of compiling their lists and data manually, customers can have it automatically inserted and updated from one single reliable source. 
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/a7366a9b4432520cdf6009083acb7db741415361/AS-IS-PROCESS/ICON.svg"  width="50%" height="50%">
 
-The sales process for the Generator is currently at an Ad-hoc stage, meaning that roles and responsibilities are yet to be defined in order to increase pipeline and ultimately business. Throughout this process, we realized that Ximiq doesn’t have the resources for a dedicated Sales Team and the sales engagement is fully managed by consultants. That’s the reason why we need to implement a lean and streamlined process to better allocate resources.  
+The sales process for the Generator Software is currently at an Ad-hoc stage, meaning that roles and responsibilities are yet to be defined in order to increase pipeline and ultimately business. Throughout this process, we realized that Ximiq doesn’t have the resources for a dedicated Sales Team and the sales engagement is fully managed by consultants. That is the reason why Ximiq needs to implement a lean and streamlined process to better allocate resources.  
 
  
 # AS-IS Process Description 
@@ -103,7 +103,13 @@ Description of AS-IS Process Elements
 
 
 # Potential automisations and extensions
-When analysing the AS-IS process several open points are there. First of all why does the firm have 
+When analysing the AS-IS process several questions came up. 
+- First of all Ximiq has a lot of waste in its sales process. 
+- Besides some automated tasks in the process most of the tasks are manually and the clients have no added value for themselves. 
+- The only value adding tasks in the process are the Demo done by the Consultant for the client, the license keys the client receives and the price information. 
+- There is a lot of transportation wast, wasted potentials of Consultants and Accountants, waiting time for the client and over-processing such as sending reminders to clients. 
+- The 3 trigger points seem not to be synchronized and needs to be merged at some point manually. 
+- Accounting seems to do everything manually and there is again a transportation between Accounting and Consulting department. 
 
 ![AS-IS-PROCESS/02_Wastes in AS-IS Process.png](https://github.com/DigiBP/Team-Apples/blob/3dc488e1addcc066fbbe203cab2336ef6cbf9227/AS-IS-PROCESS/02_Wastes%20in%20AS-IS%20Process.png)
 
