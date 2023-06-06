@@ -166,17 +166,18 @@ Description of TO-BE Process Elements and Final Solutions
 | 42  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE42.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE42.png) | The renewal is the automatically registered in CRM. | 13. Confirm renewal https://github.com/DigiBP/Team-Apples#13-confirm-renewal  | 
 
 # Make (formerly Integromat) - Scenarios
-In order to automate the above TO-BE BPMN process's service tasks, Integromat was utilized to visually create, build, and automate the workflow. The workflow entails coordinating humans, resources, and information to achieve a specific objective. Each task or activity within the workflow relies on the successful completion of preceding tasks or the occurrence of specific events, such as receiving a lead from a potential client.
+In order to automate the above TO-BE BPMN process's service tasks and message events, Integromat was utilized to visually create, build, and automate the workflow. The workflow entails coordinating humans, resources, and information to achieve a specific objective. Each task or activity within the workflow relies on the successful completion of preceding tasks or the occurrence of specific events, such as receiving a lead from a potential client.
 
 In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
 
+
 ## 1. Start Event - Software request received
 - When client decides to request the software, they will fill in a Google Form as a starting point.
-- The starting scenario involves watching for new rows in a Google Sheet, which serves as the CRM (Customer Relationship Management) system for XIMIQ.
+- The starting scenario involves watching for new rows in a Google Sheet, which serves as the CRM (Customer Relationship Management) system for Ximiq.
 - When a new row is detected in the Google Sheet, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
 - As part of the process instantiation, a new business key is generated. The business key is a unique identifier associated with the process instance and can be used for tracking or referencing purposes.
 - The information related to the new business key is then sent via an external worker to Camunda. The external worker acts as an interface between the external systems (such as the Google Sheet) and Camunda, allowing for the execution of specific tasks within the workflow.
-- Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with invoking the first external services task.
+- Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with invoking the first external services task "Sent free license key URL".
 
 ### Google Form
 <img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png"  width="50%" height="50%">
@@ -187,28 +188,35 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### CRM - Google Sheet Starting Data
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png)
 
+The Google Form only updates the field in Google Sheet that are filled in by the client the other fields such as Price and Client ID and also License Key and Renewal Date are updated with the Module Google Sheet - Update a Row.
+
 #### Scenario Module Tools - Generation Business Key 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/1.%20Generate%20Client%20ID.png" width="50%" height="50%">
+
+### Scenario Module Google Sheet - Update Client ID and calculate Price
+
+
+Picture to be added!!!!!!!!@cédric 
 
 #### Scenario Module HTTP - Make a request to Camunda
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/1.%20Start%20Process.png"  width="50%" height="50%">
 
 
-
 ## 2. Sent e-mail with URL links
-- When a new registry is added to the CRM (Customer Relationship Management) system, a trigger is initiated.
+- When a new registry is added to the CRM system, a trigger is initiated.
 - An email is automatically generated using the "Send an Email" module. The email includes details retrieved from the CRM, such as customer information, order details, or any other relevant data.
 - The email is sent to the client without any human interaction. This step is automated, meaning that the system handles it automatically without requiring manual intervention.
-- After sending the email, the workflow proceeds to the next step, which involves making an HTTP request to fetch and lock information from Camunda. This could be a service task that retrieves additional data or performs a specific action using an API provided by Camunda.
-- The fetched information is then used to complete the service task or execute a specific action. This could involve processing the data, performing calculations, or integrating with other systems.
+- After sending the email, the workflow proceeds to the next step, which involves making an HTTP request to fetch and lock information from Camunda BPMN engine. This could be a service task that retrieves additional data or performs a specific user task using an API provided by Camunda BPMN engine.
+- The fetched information is then used to complete the service task or execute a user task. 
 - Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow based on the completed task.
-- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
 ### First E-mail to client
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/02_Software%20Request.png" width="50%" height="50%">
+
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 ## 3. Order free trial license key message
 - The client is given the option to request a free trial license via Google Form.
@@ -222,6 +230,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/3. Order free trial license key message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/3.%20Order%20free%20trial%20license%20key%20message.png)
 
+
 ## 4. Generate free trial license
 - The free trial license is being generated using a UUID (Universally Unique Identifier). A UUID is a unique identifier that ensures each generated license has a distinct value.
 - After generating the free trial license with the UUID, the generated license information is written back into the CRM (Customer Relationship Management) system.
@@ -233,6 +242,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 
 ### CRM - Google Sheet Free Trial License
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png)
+
 
 ## 5. Sent free trial license
 - The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock relevant information, including the license key, from a Google Sheet or CRM system.
@@ -247,6 +257,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### E-mail Free Trial License Key
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/05_Fee%20Trial%20License%20Key.png"  width="50%" height="50%">
 
+
 ## 6. Sent License key order form URL
 - The client has a 30-day free trial license and once that is expired this scenario calculates with "Tool" modules the number of remaining days. 
 - It calculates today minus the license start date and defines if it is expired or not.
@@ -257,8 +268,6 @@ In Integromat, scenarios are created using the process engine and added to the "
 - The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
 - The e-mail always refers to the Chatbot  in case the client has issues or questions he can get in touch with the Chatbot. 
 
-
-
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
 
@@ -267,6 +276,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 
 ### E-mail Expiration Free Trial License
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/06_Free%20License%20expired%20Link%20to%20order%20yearly%20License.png"  width="50%" height="50%">
+
 
 ## 7. Order received message
 - The client is given the option to request a one yearly license, which is no longer free.
@@ -284,6 +294,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 
 ### CRM - Google Sheet License Ordering
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
+
 
 ## 8. Create Invoice and send
 - The scenario initiates an HTTP make a request step to fetch and lock the business key and topic name from Camunda. This step allows the workflow to access the necessary information for further processing.
@@ -315,6 +326,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### Invoice created with Price and Quantity information
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20(Attachment).png"  width="50%" height="50%">
 
+
 ## 9. Generate license key
 - The client decides to purchase a license key after paying for it.
 - Once the payment is completed, a new license key is generated.
@@ -323,6 +335,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/9. Generate license key.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/9.%20Generate%20license%20key.png)
+
 
 ## 10. Sent License Key
 - With this scenario the license key is retrieved from the CRM and sent via E-mail to the client. 
@@ -334,6 +347,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### E-mail License Key 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/10_License%20Key.png"  width="50%" height="50%">
 
+
 ## 11. Sent license renewal form URL
 
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
@@ -343,6 +357,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 
 ### E-mail Expiration License Key and Renewal URL
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/11_License%20Key%20expiration%20in%2030%20days.png"  width="50%" height="50%">
+
 
 ## 12. Renewing request received
 - Message event where the renewal form has been filled in 
@@ -355,6 +370,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 
 ### CRM - Google Sheet Renew License Key
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png)
+
 
 ## 13. Confirm renewal
 
