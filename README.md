@@ -168,22 +168,57 @@ Description of TO-BE Process Elements and Final Solutions
 # Make (formerly Integromat) - Scenarios
 In order to automate the above TO-BE BPMN process's service tasks and message events, Integromat was utilized to visually create, build, and automate the workflow. The workflow entails coordinating humans, resources, and information to achieve a specific objective. Each task or activity within the workflow relies on the successful completion of preceding tasks or the occurrence of specific events, such as receiving a lead from a potential client.
 
-In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
+In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker (IntegromatWoker) then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
 
 ## Information for all Service Task scenarios
 
-#### Filter used in Google Sheet Search a Row
+### Explanation Fetch and Lock and Complete HTTP make a request modules 
+- Most of the below scenarios are used to communicate with a service task in Camunda BPMN engine. 
+- The communication is done within the module in Integromat called "HTTP - Make a request" in which the external worker is defined in the payload. 
+- The first HTTP module fetches and locks the data from Camunda BPMN engine. The payload includes:
+ {
+  "workerId": "IntegromatWorker",
+  "maxTasks": 1,
+  "asyncResponseTimeout": 29000,
+  "topics": [
+    {
+      "topicName": "ServiceTaskNameFromBPMN",
+      "lockDuration": 20000,
+      "tenantId": "apples"
+    }
+  ]
+}
+- The second HTTP module completes the external worker's task and sents the information back to Camunda. The payload includes most of the time: 
+{
+  "workerId": "IntegromatWorker",
+  "variables": {
+    "email": {"value": "E-mail", "type": "String"},
+    "lastName": {"value": "Last Name", "type": "String"},
+    "firstName": {"value": "First Name", "type": "String"},
+    "price": {"value": "Price", "type": "String"},
+    "phone": {"value": "Phone", "type": "String"},
+    "businessKey": {"value": "Client ID", "type": "String"}
+  },
+  "topicName": "ServiceTaskNameFromBPMN"
+}
+- Once a service tasks is completed Camunda proceeds with the next user tasks, service task or waits for an event to happen. 
+
+### Explanation Watch a new row and message HTTP make a request modules
+- The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In all cases below, it is waiting for the message indicating the client's request for either, free trial license, yearly license or renewal of license. 
+- Once the message intermediate catch event is triggered, Camunda captures the event and continues with the workflow.
+
+### Filter used in Google Sheet Search a Row
 - This filter assures that only the business key fetched and locked from Camunda engine via HTTP module make a request, is used when searching for a row in Google Sheet. 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/e1054430-1166-4431-ad35-f594613811c4)
 
-#### Filter between modules 
-- This filter is making sure before the completion of the scenario and the service task the business key received from Camunda via HTTP module make a request is also sent back to Camunda with the correct data from the same business key. 
+### Filter between modules 
+- This filter is making sure before the completion of the scenario and the service task the business key received from Camunda via HTTP module "make a request" is also sent back to Camunda with the correct data from the same business key. 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8)
 
 ## 1. Start Event - Software request received
-- When client decides to request the software, they will fill in a Google Form as a starting point.
+- When client decides to request the ADOIT software, they will fill in a Google Form as a starting point.
 - The starting scenario involves watching for new rows in a Google Sheet, which serves as the CRM (Customer Relationship Management) system for Ximiq.
-- When a new row is detected in the Google Sheet, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
+- When a new row is detected in CRM, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
 - As part of the process instantiation, a new business key is generated. The business key is a unique identifier associated with the process instance and can be used for tracking or referencing purposes.
 - The information related to the new business key is then sent via an external worker to Camunda. The external worker acts as an interface between the external systems (such as the Google Sheet) and Camunda, allowing for the execution of specific tasks within the workflow.
 - Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with invoking the first external services task "Sent free license key URL".
@@ -197,13 +232,13 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### CRM - Google Sheet Starting Data
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png)
 
-The Google Form only updates the field in Google Sheet that are filled in by the client the other fields such as Price and Client ID and also License Key and Renewal Date are updated with the Module Google Sheet - Update a Row.
+- The Google Form only updates the fields in Google Sheet that are filled in by the client the other fields such as Price and Client ID and also License Key and Renewal Date are updated with the Module Google Sheet - Update a Row. 
+- Please note the License Key and Renewal Date will be explained later as they are saved in CRM in the later stage of the process.
 
 #### Scenario Module Tools - Generation Business Key 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/1.%20Generate%20Client%20ID.png" width="50%" height="50%">
 
 ### Scenario Module Google Sheet - Update Client ID and calculate Price
-
 
 Picture to be added!!!!!!!!@cédric 
 
@@ -213,13 +248,8 @@ Picture to be added!!!!!!!!@cédric
 
 ## 2. Sent e-mail with URL links
 - When a new registry is added to the CRM system, a trigger is initiated.
-- An email is automatically generated using the "Send an Email" module. The email includes details retrieved from the CRM, such as customer information, order details, or any other relevant data.
+- An email is automatically generated using the "Gmail-Sent an E-mail" module. The email includes details retrieved from the CRM, such as customer information, order details, or any other relevant data.
 - The email is sent to the client without any human interaction. This step is automated, meaning that the system handles it automatically without requiring manual intervention.
-- After sending the email, the workflow proceeds to the next step, which involves making an HTTP request to fetch and lock information from Camunda BPMN engine.
-- The fetched information is then used to complete the service task.
-- Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow, in this case the next event is the message intermediate catch event "Free trial License order received" which waits for a message to be received. 
-- Between Fetch and Lock HTTP and Complete HTTP make a request there is always a filter added that checks that the data ID from Camunda engine is the same as the Client ID trying to process in Integromat. This assures that not wrong data is sent to the Camunda engine.
-- The search a row Google Sheet has a filter that is used to make sure the fetched and locked data from Camunda is the same instance as the one from Integromate. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
@@ -232,8 +262,6 @@ Picture to be added!!!!!!!!@cédric
 ## 3. Order free trial license key message
 - The client is given the option to request a free trial license via Google Form.
 - The "Watch New Row" module detects the new entry in Google Sheet.
-- The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a free trial license via a message post.
-- Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow. 
 
 ### Google Form
 <img src="https://github.com/DigiBP/Team-Apples/blob/b46ba03d6847fcf93072fb754b7cca9defc1a79e/TO-BE-PROCESS/Google-Forms-Screenshots/02_Free_Trial_License.png" width="50%" height="50%">
@@ -244,10 +272,9 @@ Picture to be added!!!!!!!!@cédric
 
 ## 4. Generate free trial license
 - The free trial license is being generated using a UUID (Universally Unique Identifier). A UUID is a unique identifier that ensures each generated license has a distinct value.
-- After generating the free trial license with the UUID, the generated license information is written back into the CRM (Customer Relationship Management) system.
+- After generating the free trial license with the UUID, the generated license information is written back into the CRM system.
 - Writing the license information back into the CRM allows for proper tracking and management of the free trial licenses. It ensures that the generated licenses are associated with the respective clients or organizations.
 - The CRM system can store the generated license information, including the UUID, client details, and any other relevant information tied to the free trial license.
-- Between Fetch and Lock HTTP and Complete HTTP make a request there is always a filter added that checks that the data ID from Camunda engine is the same as the Client ID trying to process in Integromat. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
@@ -258,12 +285,12 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 5. Sent free trial license
-- The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock relevant information, including the license key, from a Google Sheet or CRM system.
-- The HTTP request fetches the necessary details from the Google Sheet or CRM system, such as the client's information and the generated license key.
-- Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data.
+- The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock relevant information.
+- All the relevant information for sending the e-mail are retrieved with the module Google Sheet search a row. 
+- Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data for the next user task "Call client for Demo request". 
 - As part of the workflow, an email is automatically sent to the client immediately as soon as the preceding scenario is finished. 
 - The Custom Webhook assures a smooth and faster sending of the License Key E-mail.
-- The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated free license key.
+- The email content is composed using the retrieved details from the CRM system, and it includes the generated free license key.
 
 
 ### Scenario
@@ -276,12 +303,12 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 6. Sent License key order form URL
-- The client has a 30-day free trial license and once that is expired this scenario calculates with "Tool" modules the number of remaining days. 
+- The client has a 30-day free trial license and once that is expired this scenario calculates with the module "Tools" the number of remaining days. 
 - It calculates today minus the license start date and defines if it is expired or not.
 - Once the remaining days are zero, an email is automatically sent to the client.
 - The email contains a URL that directs the client to a Google form where they can order the one-year license key.
 - To accomplish this, the scenario utilizes two HTTP make a request steps: fetch and lock, and complete in order to communicate with Camunda for the correct business key. 
-- After composing the email, the scenario completes the HTTP request by sending the email to the client.
+- After composing the email, the scenario completes the HTTP request by sending the information to Camunda. 
 - The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
 
 ### Scenario
