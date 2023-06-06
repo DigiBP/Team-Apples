@@ -10,6 +10,7 @@
   <li>Revathi Ravada</li>
 </ul>
 
+  <g-emoji class="g-emoji" alias="speaking_head" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f5e3.png">🗣️</g-emoji>
   Team Coach
 </a>
 <ul>
