@@ -168,39 +168,21 @@ Description of TO-BE Process Elements and Final Solutions
 # Make (formerly Integromat) - Scenarios
 In order to automate the above TO-BE BPMN process's service tasks and message events, Integromat was utilized to visually create, build, and automate the workflow. The workflow entails coordinating humans, resources, and information to achieve a specific objective. Each task or activity within the workflow relies on the successful completion of preceding tasks or the occurrence of specific events, such as receiving a lead from a potential client.
 
-In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker (IntegromatWoker) then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
+In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker (here: IntegromatWorker) then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
 
 ## Information for all Service Task scenarios
 
 ### Explanation Fetch and Lock and Complete HTTP make a request modules 
 - Most of the below scenarios are used to communicate with a service task in Camunda BPMN engine. 
 - The communication is done within the module in Integromat called "HTTP - Make a request" in which the external worker is defined in the payload. 
-- The first HTTP module fetches and locks the data from Camunda BPMN engine. The payload includes:
- {
-  "workerId": "IntegromatWorker",
-  "maxTasks": 1,
-  "asyncResponseTimeout": 29000,
-  "topics": [
-    {
-      "topicName": "ServiceTaskNameFromBPMN",
-      "lockDuration": 20000,
-      "tenantId": "apples"
-    }
-  ]
-}
-- The second HTTP module completes the external worker's task and sents the information back to Camunda. The payload includes most of the time: 
-{
-  "workerId": "IntegromatWorker",
-  "variables": {
-    "email": {"value": "E-mail", "type": "String"},
-    "lastName": {"value": "Last Name", "type": "String"},
-    "firstName": {"value": "First Name", "type": "String"},
-    "price": {"value": "Price", "type": "String"},
-    "phone": {"value": "Phone", "type": "String"},
-    "businessKey": {"value": "Client ID", "type": "String"}
-  },
-  "topicName": "ServiceTaskNameFromBPMN"
-}
+- The first HTTP module fetches and locks the data from Camunda BPMN engine. The payload looks like this:
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/b7485668-dc4f-43ae-9668-d27ca5d50482)
+
+- The second HTTP module completes the external worker's task and sents the information back to Camunda. The payload looks like this:
+ 
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/0f755b3a-0146-4d8c-8650-40a45f01f333)
+
+
 - Once a service tasks is completed Camunda proceeds with the next user tasks, service task or waits for an event to happen. 
 
 ### Explanation Watch a new row and message HTTP make a request modules
