@@ -208,9 +208,10 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow based on the completed task.
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
-
+### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
+### First E-mail to client
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/02_Software%20Request.png" width="50%" height="50%">
 
 ## 3. Order free trial license key message
@@ -303,7 +304,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/8. Create Invoice and send.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/8.%20Create%20Invoice%20and%20send.png)
 
-#### Scenario Module Gmail - Sent an e-mail including attachement of Invoice
+#### Scenario Module Gmail - Sent an e-mail including Invoice attachement
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Gmail.png"  width="50%" height="50%">
 
 #### Scenario Module Barcodes - Generate Barcode and save in Google Drive
@@ -327,13 +328,14 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/9. Generate license key.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/9.%20Generate%20license%20key.png)
 
-## 10. Sent license key
+## 10. Sent License Key
 - With this scenario the license key is retrieved from the CRM and sent via E-mail to the client. 
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
 
+### E-mail License Key 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/10_License%20Key.png"  width="50%" height="50%">
 
 ## 11. Sent license renewal form URL
@@ -343,19 +345,20 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/11. Sent license renewal form URL.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/11.%20Sent%20license%20renewal%20form%20URL.png)
 
+### E-mail Expiration License Key and Renewal URL
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/11_License%20Key%20expiration%20in%2030%20days.png"  width="50%" height="50%">
 
 ## 12. Renewing request received
 - Message event where the renewal form has been filled in 
+
+### Scenario
+![TO-BE-PROCESS/MAKE-Screenshots/12. Renewing request received.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/12.%20Renewing%20request%20received.png)
 
 ### Google Form
 <img src="https://github.com/DigiBP/Team-Apples/blob/b46ba03d6847fcf93072fb754b7cca9defc1a79e/TO-BE-PROCESS/Google-Forms-Screenshots/11_License_renewal.png" width="50%" height="50%">
 
 ### CRM - Google Sheet Renew License Key
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/11_CRM.png)
-
-### Scenario
-![TO-BE-PROCESS/MAKE-Screenshots/12. Renewing request received.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/12.%20Renewing%20request%20received.png)
 
 ## 13. Confirm renewal
 
@@ -364,10 +367,13 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/13. Confirm renewal.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/13.%20Confirm%20renewal.png)
 
+#### Scenario Module Tools - Set variable Date to String
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/13.%20Date%20to%20String.png"  width="50%" height="50%">
 
+#### Scenario Module Tools - Set variable Fromat Date
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/13.%20Format%20Date.png"  width="50%" height="50%">
 
+### E-mail Confirmation renewal of License Key
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/13_Confirmation%20renewal%20License%20Key.png"  width="50%" height="50%">
 
 # Chatbot
