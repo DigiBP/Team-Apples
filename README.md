@@ -47,9 +47,9 @@ However, if the customer does pay the invoice, the full license key is generated
 
 At any point of this process, the customer can always purchase the license, the process resumes on the step “Register order in CRM”.
 
+When the Apples Group met with Ximiq, they discovered that their business process did not have any process model  or workflow integration behind. Therefore, the Group created a best effort AS-IS BPMN process with the information they received from Ximiq. BPMN stands for Business Process Model and Notation. It is a standardized graphical notation used for modeling business processes in a visual format. BPMN provides a set of symbols and rules to represent various elements of a business process, such as activities, events, gateways, and flows. Overall, BPMN helps organizations improve process efficiency, identify bottlenecks, and streamline operations by providing a clear and standardized representation of business processes. 
+
 ![AS-IS-PROCESS/01_AS-IS_Sales Process ADOIT RGfW.png](https://github.com/DigiBP/Team-Apples/blob/4d466a928f8c591dfe7c846aaeca9fe214f92d3c/AS-IS-PROCESS/01_AS-IS_Sales%20Process%20ADOIT%20RGfW.png)
-
-
 
 
 Description of AS-IS Process Elements, Problems and Possible Improvements
@@ -96,21 +96,15 @@ Description of AS-IS Process Elements, Problems and Possible Improvements
 | 37  | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS37.png](https://github.com/DigiBP/Team-Apples/blob/c359fb74a7a2e72c2f18677aa13f3012f2183d54/AS-IS-PROCESS/Screenshots-Process-Elements/ASIS37.png) | In the CRM the status of the opportunity is set to “won”. |  |
 
 
-
-
-
-
-
-
 # AS-IS Business Process Problems 
 When analysing the AS-IS process to do a lean process improvement several questions came up. 
-- First of all Ximiq has a lot of waste in its sales process. 
+- First of all Ximiq has a lot of wastes in its sales process. 
 - Besides some automated tasks in the process most of the tasks are manually and the clients have no added value for themselves. 
 - The only value adding tasks in the process are the Demo done by the Consultant for the client, the license keys the client receives and the price information. 
 - There is a lot of transportation wast, wasted potentials of Consultants and Accountants, waiting time for the client and over-processing such as sending reminders to clients. 
 - The 3 trigger points seem not to be synchronized and needs to be merged at some point manually. 
 - Accounting seems to do everything manually and there is again a transportation between Accounting and Consulting department. 
-- Several tasks are not automated and the Consultants do not receive any reminders to make sure to contact the client after e.g. 30 days of trial license. 
+- Several tasks are not automated and the Consultants do not receive any reminders to make sure to contact the client after e.g. 30 days of trial phase. 
 
 ![AS-IS-PROCESS/02_Wastes in AS-IS Process.png](https://github.com/DigiBP/Team-Apples/blob/3dc488e1addcc066fbbe203cab2336ef6cbf9227/AS-IS-PROCESS/02_Wastes%20in%20AS-IS%20Process.png)
 
@@ -172,7 +166,9 @@ Description of TO-BE Process Elements and Final Solutions
 | 42  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE42.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE42.png) | The renewal is the automatically registered in CRM. | 13. Confirm renewal https://github.com/DigiBP/Team-Apples#13-confirm-renewal  | 
 
 # Make (formerly Integromat) - Scenarios
-In order to automate the above TOBE BPMN process Integromat has been used to visually create, build and automate the workflow. The scenarios are created by process engine and added to the "external task list" and external worker queries the topic, locks the task, works on it and completes the service task. 
+In order to automate the above TO-BE BPMN process's service tasks, Integromat was utilized to visually create, build, and automate the workflow. The workflow entails coordinating humans, resources, and information to achieve a specific objective. Each task or activity within the workflow relies on the successful completion of preceding tasks or the occurrence of specific events, such as receiving a lead from a potential client.
+
+In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
 
 ## 1. Start Event - Software request received
 - When client decides to request the software, they will fill in a Google Form as a starting point.
