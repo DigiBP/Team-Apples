@@ -191,8 +191,10 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ### CRM - Google Sheet Starting Data
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/00_CRM.png)
 
+#### Scenario Module Tools - Generation Business Key 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/1.%20Generate%20Client%20ID.png" width="50%" height="50%">
 
+#### Scenario Module HTTP - Make a request to Camunda
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/1.%20Start%20Process.png"  width="50%" height="50%">
 
 
@@ -258,18 +260,15 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
 - The e-mail always refers to the Chatbot  in case the client has issues or questions he can get in touch with the Chatbot. 
 
-### Google Form
-<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png" width="50%" height="50%">
 
-![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
 
-#### Scenario Module Tools
+#### Scenario Module Tools - Calculation Free Trial License duration 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/6.%20Difference.png"  width="50%" height="50%">
 
-### CRM - Google Sheet License Ordering
+### E-mail Expiration Free Trial License
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/06_Free%20License%20expired%20Link%20to%20order%20yearly%20License.png"  width="50%" height="50%">
 
 ## 7. Order received message
@@ -282,6 +281,12 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/7. Order received message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/7.%20Order%20received%20message.png)
+
+### Google Form
+<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png" width="50%" height="50%">
+
+### CRM - Google Sheet License Ordering
+![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
 
 ## 8. Create Invoice and send
 - The scenario initiates an HTTP make a request step to fetch and lock the business key and topic name from Camunda. This step allows the workflow to access the necessary information for further processing.
@@ -298,14 +303,19 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/8. Create Invoice and send.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/8.%20Create%20Invoice%20and%20send.png)
 
+#### Scenario Module Gmail - Sent an e-mail including attachement of Invoice
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Gmail.png"  width="50%" height="50%">
 
-<img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Create%20Invoice%20with%20Barcode.png"  width="50%" height="50%">
-
+#### Scenario Module Barcodes - Generate Barcode and save in Google Drive
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Barcode.png"  width="50%" height="50%">
 
+#### Scenario Module Google Documents - Create a Document with Barcode (Thumbnail Link)
+<img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Create%20Invoice%20with%20Barcode.png"  width="50%" height="50%">
+
+### E-mail sent with Invoice 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png"  width="50%" height="50%">
 
+### Invoice created with Price and Quantity information
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20(Attachment).png"  width="50%" height="50%">
 
 ## 9. Generate license key
