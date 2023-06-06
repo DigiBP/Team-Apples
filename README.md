@@ -327,7 +327,7 @@ Picture to be added!!!!!!!!@cédric
 <img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png" width="50%" height="50%">
 
 ### CRM - Google Sheet License Ordering
-- The Invoice Number as well as the document ID is written into the CRM system in scenrio 8 but in the below print screen it is already visible. 
+- The Invoice Number as well as the document ID is written into the CRM system in scenario 8 but in the below print screen it is already visible. 
 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
 
