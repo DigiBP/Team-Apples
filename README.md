@@ -256,7 +256,7 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 - The email is sent to the client without any human interaction. This step is automated, meaning that the system handles it automatically without requiring manual intervention.
 
 ### Scenario
-![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
+![TO-BE-PROCESS/MAKE-Screenshots/2. Send E-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/c9e6e958d85eb98af3df432a23c2a920f95a4acb/TO-BE-PROCESS/MAKE-Screenshots/2.%20Send%20E-mail%20with%20URL%20links.png)
 
 ### First E-mail to client with Google Form URL
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
@@ -281,7 +281,7 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 - The CRM system can store the generated license information, including the UUID, client details, and any other relevant information tied to the free trial license.
 
 ### Scenario
-![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
+![TO-BE-PROCESS/MAKE-Screenshots/4. Generate the free trial license.png](https://github.com/DigiBP/Team-Apples/blob/c9e6e958d85eb98af3df432a23c2a920f95a4acb/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20the%20free%20trial%20license.png)
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/7e78491f42b809da746a5192eeb8ef64833acf66/TO-BE-PROCESS/MAKE-Screenshots/Details/4.1%20Filter%20Inspector.png" width="50%" height="50%">
 
@@ -315,7 +315,7 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 - The email contains a URL that directs the client to a Google form where they can order the one-year license key.
 
 ### Scenario
-![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
+![TO-BE-PROCESS/MAKE-Screenshots/6. Send e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/c9e6e958d85eb98af3df432a23c2a920f95a4acb/TO-BE-PROCESS/MAKE-Screenshots/6.%20Send%20e-mail%20with%20form%20ordering%20final%20license.png)
 
 #### Scenario Module Tools - Calculation Free Trial License duration 
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/6.%20Difference.png"  width="50%" height="50%">
@@ -430,7 +430,7 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 - The E-mail content is composed using the retrieved details from the CRM system, and it includes the newly formated expiration date. 
 
 ### Scenario
-![TO-BE-PROCESS/MAKE-Screenshots/13. Confirm renewal.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/13.%20Confirm%20renewal.png)
+![TO-BE-PROCESS/MAKE-Screenshots/13. Confirming renewal.png](https://github.com/DigiBP/Team-Apples/blob/c9e6e958d85eb98af3df432a23c2a920f95a4acb/TO-BE-PROCESS/MAKE-Screenshots/13.%20Confirming%20renewal.png)
 
 #### Scenario Module Tools - Set variable Date to String
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/13.%20Date%20to%20String.png"  width="50%" height="50%">
