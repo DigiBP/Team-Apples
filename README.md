@@ -173,11 +173,11 @@ In Integromat, scenarios are created using the process engine and added to the "
 ## Information for all Service Task scenarios
 
 #### Filter used in Google Sheet Search a Row
-- This filter assures that only the business key fetch and lock from Camunda engine is used when searching for a row in Google Sheet. 
+- This filter assures that only the business key fetched and locked from Camunda engine via HTTP module make a request, is used when searching for a row in Google Sheet. 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/e1054430-1166-4431-ad35-f594613811c4)
 
 #### Filter between modules 
-- This filter is making sure before the completion of the scenario and the service task the business key received from Camunda is also sent back to Camunda with the correct data from the same business key. 
+- This filter is making sure before the completion of the scenario and the service task the business key received from Camunda via HTTP module make a request is also sent back to Camunda with the correct data from the same business key. 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8)
 
 ## 1. Start Event - Software request received
