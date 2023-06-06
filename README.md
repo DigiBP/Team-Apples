@@ -323,6 +323,8 @@ Picture to be added!!!!!!!!@cédric
 <img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png" width="50%" height="50%">
 
 ### CRM - Google Sheet License Ordering
+- The Invoice Number as well as the document ID is written into the CRM system in scenrio 8 but in the below print screen it is already visible. 
+
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
 
 
@@ -332,7 +334,7 @@ Picture to be added!!!!!!!!@cédric
 - The Barcode is saved in Google Drive. This step ensures that the Barcode is securely stored and can be easily accessed or referenced later in the payment information.
 - The scenario continues by creating an invoice using the generated Invoice Number and Barcode. The invoice contains relevant details such as client ID, product name, pricing, and Invoice Number. 
 - The created invoice is saved as a PDF file. This allows for easy sharing, printing, and archiving of the invoice document.
-- The scenario writes back the Invoice Number and the document ID of the saved invoice in the CRM system mainly for tracking and reference purposes.
+- The scenario writes back the Invoice Number and the document ID of the saved invoice in the CRM system mainly for tracking and reference purposes. See the CRM - Google Sheet License Ordering print screen in the previous scenario.
 - An email is then sent to the recipient, attaching the generated invoice as a PDF file. 
 
 ### Scenario
