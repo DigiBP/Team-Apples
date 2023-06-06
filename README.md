@@ -210,9 +210,13 @@ Picture to be added!!!!!!!!@cédric
 - The fetched information is then used to complete the service task.
 - Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow, in this case the next event is the message intermediate catch event "Free trial License order received" which waits for a message to be received. 
 - Between Fetch and Lock HTTP and Complete HTTP make a request there is always a filter added that checks that the data ID from Camunda engine is the same as the Client ID trying to process in Integromat. This assures that not wrong data is sent to the Camunda engine.
+- The search a row Google Sheet has a filter that is used to make sure the fetched and locked data from Camunda is the same instance as the one from Integromate. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
+
+#### Filter used in Google Sheet Search a Row
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/e1054430-1166-4431-ad35-f594613811c4)
 
 ### First E-mail to client with Google Form URL
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
