@@ -209,6 +209,7 @@ Picture to be added!!!!!!!!@cédric
 - After sending the email, the workflow proceeds to the next step, which involves making an HTTP request to fetch and lock information from Camunda BPMN engine.
 - The fetched information is then used to complete the service task.
 - Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow, in this case the next event is the message intermediate catch event "Free trial License order received" which waits for a message to be received. 
+- Between Fetch and Lock HTTP and Complete HTTP make a request there is always a filter added that checks that the data ID from Camunda engine is the same as the Client ID trying to process in Integromat. This assures that not wrong data is sent to the Camunda engine.
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
@@ -236,6 +237,7 @@ Picture to be added!!!!!!!!@cédric
 - After generating the free trial license with the UUID, the generated license information is written back into the CRM (Customer Relationship Management) system.
 - Writing the license information back into the CRM allows for proper tracking and management of the free trial licenses. It ensures that the generated licenses are associated with the respective clients or organizations.
 - The CRM system can store the generated license information, including the UUID, client details, and any other relevant information tied to the free trial license.
+- Between Fetch and Lock HTTP and Complete HTTP make a request there is always a filter added that checks that the data ID from Camunda engine is the same as the Client ID trying to process in Integromat. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
@@ -411,6 +413,10 @@ Picture to be added!!!!!!!!@cédric
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/13_Confirmation%20renewal%20License%20Key.png"  width="50%" height="50%">
+
+# BPMN Camunda User Tasks 
+
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/a265666f-5692-4363-8a1f-cf3685e96fd6)
 
 # Chatbot
 The Chatbot helps to solve any potential problem the customers may face throughout the sales cycle using an interactive frontend website. These are issues such as:
