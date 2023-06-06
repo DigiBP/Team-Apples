@@ -323,11 +323,6 @@ Picture to be added!!!!!!!!@cédric
 ### E-mail sent with Invoice 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png"  width="50%" height="50%">
 
-![Image with Border](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png)
-<div style="border: 2px solid black; padding: 10px; display: inline-block;">
-    <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png" alt="Image with Border" width="50%" height="50%">
-</div>
-
 ### Invoice created with Price and Quantity information
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20(Attachment).png"  width="50%" height="50%">
 
