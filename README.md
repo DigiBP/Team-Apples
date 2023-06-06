@@ -176,6 +176,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 - Most of the below scenarios are used to communicate with a service task in Camunda BPMN engine. 
 - The communication is done within the module in Integromat called "HTTP - Make a request" in which the external worker is defined in the payload. 
 - The first HTTP module fetches and locks the data from Camunda BPMN engine. The payload looks like this:
+
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/b7485668-dc4f-43ae-9668-d27ca5d50482)
 
 - The second HTTP module completes the external worker's task and sents the information back to Camunda. The payload looks like this:
@@ -185,9 +186,11 @@ In Integromat, scenarios are created using the process engine and added to the "
 
 - Once a service tasks is completed Camunda proceeds with the next user tasks, service task or waits for an event to happen. 
 
-### Explanation Watch a new row and message HTTP make a request modules
-- The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In all cases below, it is waiting for the message indicating the client's request for either, free trial license, yearly license or renewal of license. 
+### Explanation message HTTP make a request modules
+- The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In the cases below, it is waiting for the message indicating the client's request for either, free trial license, yearly license or renewal of license. 
 - Once the message intermediate catch event is triggered, Camunda captures the event and continues with the workflow.
+
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/9b760304-51af-4ccf-9d5e-7aeb4133845d)
 
 ### Filter used in Google Sheet Search a Row
 - This filter assures that only the business key fetched and locked from Camunda engine via HTTP module make a request, is used when searching for a row in Google Sheet. 
@@ -230,7 +233,8 @@ Picture to be added!!!!!!!!@cédric
 
 ## 2. Sent e-mail with URL links
 - When a new registry is added to the CRM system, a trigger is initiated.
-- An email is automatically generated using the "Gmail-Sent an E-mail" module. The email includes details retrieved from the CRM, such as customer information, order details, or any other relevant data.
+- An email is automatically generated using the "Gmail - Sent an E-mail" module. 
+- The scenario retrieves data from the CRM, such as customer information, order details, or any other relevant data.
 - The email is sent to the client without any human interaction. This step is automated, meaning that the system handles it automatically without requiring manual intervention.
 
 ### Scenario
@@ -272,7 +276,7 @@ Picture to be added!!!!!!!!@cédric
 - Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data for the next user task "Call client for Demo request". 
 - As part of the workflow, an email is automatically sent to the client immediately as soon as the preceding scenario is finished. 
 - The Custom Webhook assures a smooth and faster sending of the License Key E-mail.
-- The email content is composed using the retrieved details from the CRM system, and it includes the generated free license key.
+- The E-mail content is composed using the retrieved details from the CRM system, and it includes the generated free license key.
 
 
 ### Scenario
@@ -285,13 +289,10 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 6. Sent License key order form URL
-- The client has a 30-day free trial license and once that is expired this scenario calculates with the module "Tools" the number of remaining days. 
-- It calculates today minus the license start date and defines if it is expired or not.
+- The client has a 30-day free trial license and once it is expired this scenario calculates with the module "Tools" the number of remaining days. 
+- It calculates today minus the license start date and defines if it is expired or not and filters in between the modules.
 - Once the remaining days are zero, an email is automatically sent to the client.
 - The email contains a URL that directs the client to a Google form where they can order the one-year license key.
-- To accomplish this, the scenario utilizes two HTTP make a request steps: fetch and lock, and complete in order to communicate with Camunda for the correct business key. 
-- After composing the email, the scenario completes the HTTP request by sending the information to Camunda. 
-- The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
@@ -306,12 +307,9 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 7. Order received message
-- The client is given the option to request a one yearly license, which is no longer free.
-- If the client decides to proceed with the yearly license, they fill out a form indicating their intention.
-- The "Watch New Row" module detects the new row or entry in CRM.
-- The "Watch New Row" module triggers an intermediate catching message event in Camunda.
-- The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a yearly license key.
-- Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow in this case the service task "Create and sent Invoice". 
+- The client is given the option to request a one-year license key, which is no longer free.
+- If the client decides to proceed with the one-year license key, they fill out a form indicating their intention.
+- The "Watch New Row" module detects the new row or entry in the CRM system.
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/7. Order received message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/7.%20Order%20received%20message.png)
@@ -324,16 +322,13 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 8. Create Invoice and send
-- The scenario initiates an HTTP make a request step to fetch and lock the business key and topic name from Camunda. This step allows the workflow to access the necessary information for further processing.
-- With the fetched information, the scenario proceeds to create an Invoice Number. This could involve generating a unique identifier or following a specific numbering scheme.
+- With the retrieved information, the scenario proceeds to create an Invoice Number, which is done with generating a unique identifier and using the same variable as in business key (b_key) creation. 
 - Additionally, the scenario generates a Barcode associated with the invoice. This Barcode serves as a reference for scanning purposes.
 - The Barcode is saved in Google Drive. This step ensures that the Barcode is securely stored and can be easily accessed or referenced later in the payment information.
 - The scenario continues by creating an invoice using the generated Invoice Number and Barcode. The invoice contains relevant details such as client ID, product name, pricing, and Invoice Number. 
 - The created invoice is saved as a PDF file. This allows for easy sharing, printing, and archiving of the invoice document.
-- The scenario writes back the Invoice Number and the document ID of the saved invoice in Google Sheet. This step updates the Google Sheet with the relevant invoice information for tracking and reference purposes.
-- An email is then sent to the recipient, attaching the generated invoice as a PDF file. The e-mail includes the details of the payment. 
-- Finally, the scenario completes the process with another HTTP make a request, indicating the successful completion of the workflow.
-
+- The scenario writes back the Invoice Number and the document ID of the saved invoice in the CRM system mainly for tracking and reference purposes.
+- An email is then sent to the recipient, attaching the generated invoice as a PDF file. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/8. Create Invoice and send.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/8.%20Create%20Invoice%20and%20send.png)
@@ -358,7 +353,7 @@ Picture to be added!!!!!!!!@cédric
 
 ## 9. Generate license key
 - The client decides to purchase a license key after paying for it.
-- Once the payment is completed, a new license key is generated.
+- Once the payment is confirmed by the Consultant, a new license key is generated automatically. 
 - The generated license key is then written back into the CRM system.
 - The license key is associated with the client's credentials in the CRM system, ensuring it is properly linked to the client's profile.
 
@@ -369,7 +364,7 @@ Picture to be added!!!!!!!!@cédric
 ## 10. Sent License Key
 - With this scenario the license key is retrieved from the CRM and sent via E-mail to the client immediately as soon as the preceding scenario is finished. 
 - The Custom Webhook assures a smooth and faster sending of the License Key E-mail. 
-- The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated license key.
+- The email content is composed using the retrieved details from the CRM system, and it includes the generated license key.
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
@@ -381,9 +376,8 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 11. Sent license renewal form URL
-
-- After 330 days just 30 days before the expiration of the yearly license key this scenario automatically sents a renewal licens URL Link to the client via E-mail. 
-- The email content is composed using the retrieved details from the CRM, and it includes the price information to be paid, if renewal is requested. 
+- After 330 days - just 30 days before the expiration of the yearly license key - this scenario automatically sents a renewal licens URL link to the client via E-mail. 
+- The E-mail content is composed using the retrieved details from the CRM, and it includes the price information to be paid, if renewal is requested. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/11. Sent license renewal form URL.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/11.%20Sent%20license%20renewal%20form%20URL.png)
@@ -394,13 +388,9 @@ Picture to be added!!!!!!!!@cédric
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/11_License%20Key%20expiration%20in%2030%20days.png"  width="50%" height="50%">
 
 ## 12. Renewing request received
-- The client is given the option to renew the existing yearly license key. 
+- The client is given the option to renew the existing one-year license key. 
 - If the client decides to renew the license key, they fill out a form indicating their intention.
 - The "Watch New Row" module detects the new row or entry in CRM.
-- The "Watch New Row" module triggers an intermediate catching message event in Camunda.
-- The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a yearly license key.
-- Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow in this case the user task "Confirm payment and renew license" will appear in the task list of the Consultant. 
-
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/12. Renewing request received.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/12.%20Renewing%20request%20received.png)
@@ -414,9 +404,9 @@ Picture to be added!!!!!!!!@cédric
 
 ## 13. Confirm renewal
 - Within this scenario the immediate trigger is once data arrives from the previous event fetched and locked from Camuda engine. In this case it is a user task in which a new date is confirmed or not.
-- If the Consultant confirms the renewal of the license then this scenario is formating the date and writting it back to CRM.
-- Once the previous modules are done the client receives within this scenario an automatic confirmation e-mail with the new expiration date. 
-- The email content is composed using the retrieved details from CRM, and it includes the newly formated expiration date. 
+- If the Consultant confirms the renewal of the license then this scenario is formating the date and writting it back to the CRM system.
+- Once the previous modules are done the client receives within this scenario an automatic confirmation E-mail with the new expiration date. 
+- The E-mail content is composed using the retrieved details from the CRM system, and it includes the newly formated expiration date. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/13. Confirm renewal.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/13.%20Confirm%20renewal.png)
