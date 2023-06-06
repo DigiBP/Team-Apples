@@ -188,11 +188,11 @@ In Integromat, scenarios are created using the process engine and added to the "
 - The topic name should be the same as in the external implementation topic name in the service task that needs to be triggered in the BPMN model.  
 - The payload looks like this:
 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/b7485668-dc4f-43ae-9668-d27ca5d50482)
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/b7485668-dc4f-43ae-9668-d27ca5d50482"  width="50%" height="50%">
 
 - The second HTTP module completes the external worker's task and sents the information back to Camunda. The payload looks like this:
  
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/0f755b3a-0146-4d8c-8650-40a45f01f333)
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/0f755b3a-0146-4d8c-8650-40a45f01f333"  width="50%" height="50%">
 
 
 - Once a service tasks is completed Camunda proceeds with the next user tasks, service task or waits for an event to happen. 
@@ -203,20 +203,20 @@ In Integromat, scenarios are created using the process engine and added to the "
 - The HTTP make a request module should include the same message name as defined in the message intermatediate catch event in the BPMN model.  
 - The payload looks like this: 
 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/9b760304-51af-4ccf-9d5e-7aeb4133845d)
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/9b760304-51af-4ccf-9d5e-7aeb4133845d"  width="50%" height="50%">
 
 ### Filter used in Google Sheet Search a Row
 - This filter assures that only the business key fetched and locked from Camunda engine via HTTP module make a request, is used when searching for a row in Google Sheet. 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/e1054430-1166-4431-ad35-f594613811c4)
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/e1054430-1166-4431-ad35-f594613811c4"  width="50%" height="50%">
 
 ### Filter between modules 
 - This filter is making sure before the completion of the scenario and the service task the business key received from Camunda via HTTP module "make a request" is also sent back to Camunda with the correct data from the same business key. 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8)
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8"  width="75%" height="75%">
 
 ### Custom Webhook registered in Camunda BPMN under the Sequence Flows 
 For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trigger immediate execution of the scenario upon data arrival. This is achieved using the Execution listener in the BPMN Camunda engine to facilitate communication between BPMN and the Integromat Worker. The exact URL from the Webhook scenario that needs to be triggered is determined through this process.
 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/38634b94-df3d-4850-8d78-7d19735a3b2a)
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/38634b94-df3d-4850-8d78-7d19735a3b2a"  width="75%" height="75%">
 
 ## 1. Start Event - Software request received
 - When client decides to request the ADOIT software, they will fill in a Google Form as a starting point.
@@ -443,7 +443,7 @@ Picture to be added!!!!!!!!@cédric
 # BPMN <img width="104" height="35" src="https://camunda.com/wp-content/uploads/2020/05/logo-camunda-black.svg" class="custom-logo" alt="Camunda Logo" decoding="async"> User Tasks
 
 ### Data received from preceding Service Task 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/686ec563-d0ba-4c19-93aa-61573fac7d47)
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/686ec563-d0ba-4c19-93aa-61573fac7d47"  width="50%" height="50%">
 
 ### Call Client for Demo Request as a first Contact point and confirm 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/a265666f-5692-4363-8a1f-cf3685e96fd6)
