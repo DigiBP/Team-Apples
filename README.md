@@ -172,6 +172,8 @@ Description of TO-BE Process Elements and Solution & Comments
 | 42  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE42.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE42.png) | The renewal is the automatically registered in CRM. | 13. Confirm renewal https://github.com/DigiBP/Team-Apples#13-confirm-renewal  | 
 
 # Make (formerly Integromat) - Scenarios
+<img alt="Make logo" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+
 In order to automate the above TO-BE BPMN process's service tasks and message events, Integromat was utilized to visually create, build, and automate the workflow. The workflow entails coordinating humans, resources, and information to achieve a specific objective. Each task or activity within the workflow relies on the successful completion of preceding tasks or the occurrence of specific events, such as receiving a lead from a potential client.
 
 In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker (here: IntegromatWorker) then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
@@ -437,7 +439,7 @@ Picture to be added!!!!!!!!@cédric
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/13_Confirmation%20renewal%20License%20Key.png"  width="50%" height="50%">
 
-# BPMN Camunda User Tasks 
+# BPMN <img width="104" height="35" src="https://camunda.com/wp-content/uploads/2020/05/logo-camunda-black.svg" class="custom-logo" alt="Camunda Logo" decoding="async"> User Tasks
 
 ### Data received from preceding Service Task 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/686ec563-d0ba-4c19-93aa-61573fac7d47)
