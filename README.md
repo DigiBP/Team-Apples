@@ -490,8 +490,11 @@ The following automations were done:
 <img src="https://github.com/DigiBP/Team-Apples/blob/73a2b174b6e706d5762de81f862105f0b9e240ee/CHATBOT-Files/Screenshots/10.%20Google%20Calendar%2C%20Forms%2C%20Sheet.png"  width="90%" height="90%">
 
 # Conclusion
-The process has been improved massively and if Ximiq would give the Group Apples the exact time used for each user task the Group could have calculated the 
-Flow Efficiency (%) = Value added Time / Process Lead Time (total time needed to fulfill a customer order). Looking at all the manual tasks that probably costed a lot of time the flow efficiency with the TO-BE process would have costed Ximiq significantly less time than with the AS-IS process. Looking at the AS-IS process problem with no process in t
+The process has been improved massively, and if Ximiq were to provide the Apples Group with the exact time used for each user task, the Group could calculate the Flow Efficiency (%), which is the Value Added Time divided by the Process Lead Time (the total time needed to fulfill a customer order). Considering the manual tasks that likely consumed a significant amount of time, the flow efficiency with the TO-BE process would have been much lower, and Ximiq would save considerably more in consultant salary costs compared to the AS-IS process. With the implementation of the Chatbot, Ximiq would save even more time by handling standard questions from clients. However, to maintain contact with the clients, certain user tasks are still important for communication and to identify any additional needs. The level of contact may not be as high as in the AS-IS process, but the consultant can still decide whether or not to get in touch with the client in order to win the opportunity.
+
+# Suggestions
+The solution, however, requires several changes from Ximiq's side, such as modifying the lead creation trigger points. The various providers should have the same link to a common form, enabling automatic updates in the CRM system. Another crucial aspect that has not been included in the solution due to the absence of real data and a connection is the integration of an email notification when the client makes a payment. Typically, banks send notifications that can be read using a module called "Gmail - Watch email" and subsequently processed within the workflow. Similarly, the Live Demo scheduling form could also be integrated into this BPMN workflow.
+
 
 
 
