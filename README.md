@@ -493,18 +493,33 @@ The following automations were done:
 - Provides an appointment scheduler using Google Calendar in case customer needs to reschedule or missed the live demo - integrated link
 
 ### WIX.com
+
+The customer will see a user-friendly frontend which is desigend using Wix.com. The chatbot interface is fully managed by Kommunicate.io and it's embedded into Wix.com using HTML Coding.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/7.%20wix.com.png"  width="90%" height="90%">
 
 ### Kommunicate.io
+
+Kommunicate.io manages the Chatbot interface between Wix.com and Google Dialogflow. We have managed to implement a smart way to handover chat conversations to a live agent should the customer request it or given words expressing discontent such as: “frustrated” or “urgent”
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/8.%20Kommunikate.io.png"  width="90%" height="90%">
 
-### Dialogflow
-<img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Chatbot%20-%20Make%20Screenshot.png"  width="90%" height="90%">
-
 ### make.com
+
+Using webhooks in make.com, we have managed to capture the Client ID which is then used to respond to queries in real-time. For example, should the customer forget about their trial license, they can ask the chatbot directly to provide it by using their Client IT. This is possible thanks to the feature “Response fulfillment” looks for and matches the Client ID in our Google Docs database. The customer receives an answer immediately in the chatbot, avoiding to contact a live agent.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/9.%20Dialogflow.png"  width="90%" height="90%">
 
+### Dialogflow
+
+Dialogflow is the natural language platform which makes the chatbot possible. We created more than 17 different intents to ensure the customer gets as many problems as possible solved directly in the chatbot without the need for contacting a live agent yet, we made sure that sentiments are well take into account so that a person can join the chat at anytime should the customer run into any “frustration”. Please see the demonstration video to explore this feature.
+
+<img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Chatbot%20-%20Make%20Screenshot.png"  width="90%" height="90%">
+
 ### Google Calendar, Google Forms, Google Sheets
+
+We also integrated directly in the chatbot the option to schedule or reschedule live demonstrations or a live meeting with our consultants. This is useful when the customer what’s to better understand our solutions, when they missed a demo or if they simply need to change a live demo date/time.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/73a2b174b6e706d5762de81f862105f0b9e240ee/CHATBOT-Files/Screenshots/10.%20Google%20Calendar%2C%20Forms%2C%20Sheet.png"  width="90%" height="90%">
 
 # Conclusion
