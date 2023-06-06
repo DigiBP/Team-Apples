@@ -180,8 +180,9 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - When a new row is detected in the Google Sheet, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
 - As part of the process instantiation, a new business key is generated. The business key is a unique identifier associated with the process instance and can be used for tracking or referencing purposes.
 - The information related to the new business key is then sent via an external worker to Camunda. The external worker acts as an interface between the external systems (such as the Google Sheet) and Camunda, allowing for the execution of specific tasks within the workflow.
-- Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with its predefined steps, such as executing user tasks, making decisions, or invoking external services.
+- Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with invoking the first external services task.
 
+### Google Form
 <img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png"  width="50%" height="50%">
 
 ### Scenario
@@ -244,6 +245,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
 
+### E-mail Free Trial License Key
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/05_Fee%20Trial%20License%20Key.png"  width="50%" height="50%">
 
 ## 6. Sent License key order form URL
@@ -256,8 +258,7 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 - The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
 - The e-mail always refers to the Chatbot  in case the client has issues or questions he can get in touch with the Chatbot. 
 
-<img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/6.%20Difference.png"  width="50%" height="50%">
-
+### Google Form
 <img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png" width="50%" height="50%">
 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
@@ -265,6 +266,10 @@ In order to automate the above TOBE BPMN process Integromat has been used to vis
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
 
+#### Scenario Module Tools
+<img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/6.%20Difference.png"  width="50%" height="50%">
+
+### CRM - Google Sheet License Ordering
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/06_Free%20License%20expired%20Link%20to%20order%20yearly%20License.png"  width="50%" height="50%">
 
 ## 7. Order received message
