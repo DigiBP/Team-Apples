@@ -418,6 +418,8 @@ Picture to be added!!!!!!!!@cédric
 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/a265666f-5692-4363-8a1f-cf3685e96fd6)
 
+
+
 # Chatbot
 The Chatbot helps to solve any potential problem the customers may face throughout the sales cycle using an interactive frontend website. These are issues such as:
 - Accessing ordering forms for our software license: trial, purchase and renewal
