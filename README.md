@@ -171,9 +171,9 @@ In order to automate the above TO-BE BPMN process's service tasks and message ev
 
 In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker (here: IntegromatWorker) then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
 
-## Pre-Information to the scenarios 
+## Pre-Information for the Scenarios 
 
-### Explanation Fetch and Lock and Complete HTTP make a request modules 
+### Fetch and Lock and Complete Posts HTTP make a request modules 
 - Most of the below scenarios are used to communicate with a service task in Camunda BPMN engine. 
 - The communication is done within the module in Integromat called "HTTP - Make a request" in which the external worker is defined in the payload. 
 - The first HTTP module fetches and locks the data from Camunda BPMN engine. The payload looks like this:
@@ -187,7 +187,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 
 - Once a service tasks is completed Camunda proceeds with the next user tasks, service task or waits for an event to happen. 
 
-### Explanation message HTTP make a request modules
+### Message Post HTTP make a request modules
 - The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In the cases below, it is waiting for the message indicating the client's request for either, free trial license, yearly license or renewal of license. 
 - Once the message intermediate catch event is triggered, Camunda captures the event and continues with the workflow.
 
