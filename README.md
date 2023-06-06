@@ -206,17 +206,17 @@ Picture to be added!!!!!!!!@cédric
 - When a new registry is added to the CRM system, a trigger is initiated.
 - An email is automatically generated using the "Send an Email" module. The email includes details retrieved from the CRM, such as customer information, order details, or any other relevant data.
 - The email is sent to the client without any human interaction. This step is automated, meaning that the system handles it automatically without requiring manual intervention.
-- After sending the email, the workflow proceeds to the next step, which involves making an HTTP request to fetch and lock information from Camunda BPMN engine. This could be a service task that retrieves additional data or performs a specific user task using an API provided by Camunda BPMN engine.
-- The fetched information is then used to complete the service task or execute a user task. 
-- Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow based on the completed task.
+- After sending the email, the workflow proceeds to the next step, which involves making an HTTP request to fetch and lock information from Camunda BPMN engine.
+- The fetched information is then used to complete the service task.
+- Once the service task is completed, the resulting information or outcome is sent back to Camunda. This allows Camunda to update the process instance's state and continue with the workflow, in this case the next event is the message intermediate catch event "Free trial License order received" which waits for a message to be received. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
-### First E-mail to client
-<img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/02_Software%20Request.png" width="50%" height="50%">
-
+### First E-mail to client with Google Form URL
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
+<img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/02_Software%20Request.png" width="50%" height="50%">
 
 ## 3. Order free trial license key message
 - The client is given the option to request a free trial license via Google Form.
@@ -248,13 +248,17 @@ Picture to be added!!!!!!!!@cédric
 - The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock relevant information, including the license key, from a Google Sheet or CRM system.
 - The HTTP request fetches the necessary details from the Google Sheet or CRM system, such as the client's information and the generated license key.
 - Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data.
-- As part of the workflow, an email is automatically sent to the client. The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated license key.
-- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+- As part of the workflow, an email is automatically sent to the client immediately as soon as the preceding scenario is finished. 
+- The Custom Webhook assures a smooth and faster sending of the License Key E-mail.
+- The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated free license key.
+
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
 
 ### E-mail Free Trial License Key
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/05_Fee%20Trial%20License%20Key.png"  width="50%" height="50%">
 
 
@@ -266,7 +270,7 @@ Picture to be added!!!!!!!!@cédric
 - To accomplish this, the scenario utilizes two HTTP make a request steps: fetch and lock, and complete in order to communicate with Camunda and make sure the correct business key is processed. 
 - After composing the email, the scenario completes the HTTP request by sending the email to the client.
 - The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
-- The e-mail always refers to the Chatbot  in case the client has issues or questions he can get in touch with the Chatbot. 
+
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
@@ -275,16 +279,18 @@ Picture to be added!!!!!!!!@cédric
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/6.%20Difference.png"  width="50%" height="50%">
 
 ### E-mail Expiration Free Trial License
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/06_Free%20License%20expired%20Link%20to%20order%20yearly%20License.png"  width="50%" height="50%">
 
 
 ## 7. Order received message
 - The client is given the option to request a one yearly license, which is no longer free.
 - If the client decides to proceed with the yearly license, they fill out a form indicating their intention.
-- The "Watch New Row" module detects the new row or entry in the form.
+- The "Watch New Row" module detects the new row or entry in CRM.
 - The "Watch New Row" module triggers an intermediate catching message event in Camunda.
 - The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a yearly license key.
-- Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow. 
+- Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow in this case the service task "Create and sent Invoice". 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/7. Order received message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/7.%20Order%20received%20message.png)
@@ -306,7 +312,7 @@ Picture to be added!!!!!!!!@cédric
 - The scenario writes back the Invoice Number and the document ID of the saved invoice in Google Sheet. This step updates the Google Sheet with the relevant invoice information for tracking and reference purposes.
 - An email is then sent to the recipient, attaching the generated invoice as a PDF file. The e-mail includes the details of the payment. 
 - Finally, the scenario completes the process with another HTTP make a request, indicating the successful completion of the workflow.
-- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/8. Create Invoice and send.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/8.%20Create%20Invoice%20and%20send.png)
@@ -320,7 +326,9 @@ Picture to be added!!!!!!!!@cédric
 #### Scenario Module Gmail - Sent an e-mail including Invoice attachement
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Gmail.png"  width="50%" height="50%">
 
-### E-mail sent with Invoice 
+### E-mail sent with Invoice
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png"  width="50%" height="50%">
 
 ### Invoice created with Price and Quantity information
@@ -330,7 +338,7 @@ Picture to be added!!!!!!!!@cédric
 ## 9. Generate license key
 - The client decides to purchase a license key after paying for it.
 - Once the payment is completed, a new license key is generated.
-- The generated license key is then written back into the CRM (Customer Relationship Management) system.
+- The generated license key is then written back into the CRM system.
 - The license key is associated with the client's credentials in the CRM system, ensuring it is properly linked to the client's profile.
 
 ### Scenario
@@ -338,29 +346,41 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 10. Sent License Key
-- With this scenario the license key is retrieved from the CRM and sent via E-mail to the client. 
-- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+- With this scenario the license key is retrieved from the CRM and sent via E-mail to the client immediately as soon as the preceding scenario is finished. 
+- The Custom Webhook assures a smooth and faster sending of the License Key E-mail. 
+- The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated license key.
+
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
 
 ### E-mail License Key 
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/10_License%20Key.png"  width="50%" height="50%">
 
 
 ## 11. Sent license renewal form URL
 
-- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+- After 330 days just 30 days before the expiration of the yearly license key this scenario automatically sents a renewal licens URL Link to the client via E-mail. 
+- The email content is composed using the retrieved details from the CRM, and it includes the price information to be paid, if renewal is requested. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/11. Sent license renewal form URL.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/11.%20Sent%20license%20renewal%20form%20URL.png)
 
 ### E-mail Expiration License Key and Renewal URL
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/11_License%20Key%20expiration%20in%2030%20days.png"  width="50%" height="50%">
 
-
 ## 12. Renewing request received
-- Message event where the renewal form has been filled in 
+- The client is given the option to renew the existing yearly license key. 
+- If the client decides to renew the license key, they fill out a form indicating their intention.
+- The "Watch New Row" module detects the new row or entry in CRM.
+- The "Watch New Row" module triggers an intermediate catching message event in Camunda.
+- The intermediate catching message event in Camunda serves as a waiting state for a specific message to arrive. In this case, it is waiting for the message indicating the client's request for a yearly license key.
+- Once the intermediate catching message event is triggered, Camunda captures the event and continues with the workflow in this case the user task "Confirm payment and renew license" will appear in the task list of the Consultant. 
+
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/12. Renewing request received.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/12.%20Renewing%20request%20received.png)
@@ -373,8 +393,10 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 13. Confirm renewal
-
-- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+- Within this scenario the immediate trigger is once data arrives from the previous event fetched and locked from Camuda engine. In this case it is a user task in which a new date is confirmed or not.
+- If the Consultant confirms the renewal of the license then this scenario is formating the date and writting it back to CRM.
+- Once the previous modules are done the client receives within this scenario an automatic confirmation e-mail with the new expiration date. 
+- The email content is composed using the retrieved details from CRM, and it includes the newly formated expiration date. 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/13. Confirm renewal.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/13.%20Confirm%20renewal.png)
@@ -386,6 +408,8 @@ Picture to be added!!!!!!!!@cédric
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/13.%20Format%20Date.png"  width="50%" height="50%">
 
 ### E-mail Confirmation renewal of License Key
+- The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
+
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/13_Confirmation%20renewal%20License%20Key.png"  width="50%" height="50%">
 
 # Chatbot
