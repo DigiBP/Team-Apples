@@ -216,7 +216,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### Custom Webhook registered in Camunda BPMN under the Sequence Flows 
 For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trigger immediate execution of the scenario upon data arrival. This is achieved using the Execution listener in the BPMN Camunda engine to facilitate communication between BPMN and the Integromat Worker. The exact URL from the Webhook scenario that needs to be triggered is determined through this process.
 
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/38634b94-df3d-4850-8d78-7d19735a3b2a"  width="75%" height="75%">
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/38634b94-df3d-4850-8d78-7d19735a3b2a"  width="30%" height="30%">
 
 ## 1. Start Event - Software request received
 - When client decides to request the ADOIT software, they will fill in a Google Form as a starting point.
