@@ -311,17 +311,22 @@ Picture to be added!!!!!!!!@cédric
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/8. Create Invoice and send.png](https://github.com/DigiBP/Team-Apples/blob/1546a24de3f3222c595b6a0c8fbc52b69e984a95/TO-BE-PROCESS/MAKE-Screenshots/8.%20Create%20Invoice%20and%20send.png)
 
-#### Scenario Module Gmail - Sent an e-mail including Invoice attachement
-<img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Gmail.png"  width="50%" height="50%">
-
 #### Scenario Module Barcodes - Generate Barcode and save in Google Drive
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Barcode.png"  width="50%" height="50%">
 
 #### Scenario Module Google Documents - Create a Document with Barcode (Thumbnail Link)
 <img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Create%20Invoice%20with%20Barcode.png"  width="50%" height="50%">
 
+#### Scenario Module Gmail - Sent an e-mail including Invoice attachement
+<img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/8.%20Gmail.png"  width="50%" height="50%">
+
 ### E-mail sent with Invoice 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png"  width="50%" height="50%">
+
+![Image with Border](https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png)
+<div style="border: 2px solid black; padding: 10px; display: inline-block;">
+    <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20Number.png" alt="Image with Border" width="50%" height="50%">
+</div>
 
 ### Invoice created with Price and Quantity information
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/08_Invoice%20(Attachment).png"  width="50%" height="50%">
