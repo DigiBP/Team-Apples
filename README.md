@@ -243,10 +243,10 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 
 ### Scenario Module Google Sheet - Update Client ID and calculate Price
 
-Picture to be added!!!!!!!!@cédric 
+<img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/1.%20Start%20Process.png"  width="50%" height="50%">
 
 #### Scenario Module HTTP - Make a request to Camunda
-<img src="https://github.com/DigiBP/Team-Apples/blob/c19ac9acfcf5427fa8143a7f42124891f7619a22/TO-BE-PROCESS/MAKE-Screenshots/Details/1.%20Start%20Process.png"  width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/blob/7e78491f42b809da746a5192eeb8ef64833acf66/TO-BE-PROCESS/MAKE-Screenshots/Details/1.1%20Google%20Sheet%20-%20Update%20Client%20ID.png"  width="50%" height="50%">
 
 
 ## 2. Sent e-mail with URL links
@@ -283,6 +283,9 @@ Picture to be added!!!!!!!!@cédric
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
 
+<img src="https://github.com/DigiBP/Team-Apples/blob/7e78491f42b809da746a5192eeb8ef64833acf66/TO-BE-PROCESS/MAKE-Screenshots/Details/4.1%20Filter%20Inspector.png" width="50%" height="50%">
+
+<img src="https://github.com/DigiBP/Team-Apples/blob/7e78491f42b809da746a5192eeb8ef64833acf66/TO-BE-PROCESS/MAKE-Screenshots/Details/4.2%20Google%20Sheets%20-%20Search%20Row.png" width="50%" height="50%">
 
 ### CRM - Google Sheet Free Trial License
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png)
