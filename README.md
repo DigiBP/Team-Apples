@@ -170,6 +170,15 @@ In order to automate the above TO-BE BPMN process's service tasks and message ev
 
 In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
 
+## Information for all Service Task scenarios
+
+#### Filter used in Google Sheet Search a Row
+- This filter assures that only the business key fetch and lock from Camunda engine is used when searching for a row in Google Sheet. 
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/e1054430-1166-4431-ad35-f594613811c4)
+
+#### Filter between modules 
+- This filter is making sure before the completion of the scenario and the service task the business key received from Camunda is also sent back to Camunda with the correct data from the same business key. 
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8)
 
 ## 1. Start Event - Software request received
 - When client decides to request the software, they will fill in a Google Form as a starting point.
@@ -215,9 +224,6 @@ Picture to be added!!!!!!!!@cédric
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/2. Sent e-mail with URL links.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/2.%20Sent%20e-mail%20with%20URL%20links.png)
 
-#### Filter used in Google Sheet Search a Row
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/e1054430-1166-4431-ad35-f594613811c4)
-
 ### First E-mail to client with Google Form URL
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
@@ -245,9 +251,6 @@ Picture to be added!!!!!!!!@cédric
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
-
-#### Filter between modules 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8)
 
 
 ### CRM - Google Sheet Free Trial License
@@ -277,10 +280,9 @@ Picture to be added!!!!!!!!@cédric
 - It calculates today minus the license start date and defines if it is expired or not.
 - Once the remaining days are zero, an email is automatically sent to the client.
 - The email contains a URL that directs the client to a Google form where they can order the one-year license key.
-- To accomplish this, the scenario utilizes two HTTP make a request steps: fetch and lock, and complete in order to communicate with Camunda and make sure the correct business key is processed. 
+- To accomplish this, the scenario utilizes two HTTP make a request steps: fetch and lock, and complete in order to communicate with Camunda for the correct business key. 
 - After composing the email, the scenario completes the HTTP request by sending the email to the client.
 - The client receives the email, which includes the URL to the Google form, allowing them to order the one-year license key.
-
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/6. Sending e-mail with form ordering final license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/6.%20Sending%20e-mail%20with%20form%20ordering%20final%20license.png)
@@ -359,7 +361,6 @@ Picture to be added!!!!!!!!@cédric
 - With this scenario the license key is retrieved from the CRM and sent via E-mail to the client immediately as soon as the preceding scenario is finished. 
 - The Custom Webhook assures a smooth and faster sending of the License Key E-mail. 
 - The email content is composed using the retrieved details from the Google Sheet or CRM, and it includes the generated license key.
-
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/10. Sent license key.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/10.%20Sent%20license%20key.png)
