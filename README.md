@@ -242,6 +242,10 @@ Picture to be added!!!!!!!!@cédric
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/4. Generate free trial license.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/4.%20Generate%20free%20trial%20license.png)
 
+#### Filter between modules 
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8)
+
+
 ### CRM - Google Sheet Free Trial License
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/02_CRM.png)
 
@@ -416,12 +420,20 @@ Picture to be added!!!!!!!!@cédric
 
 # BPMN Camunda User Tasks 
 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/a265666f-5692-4363-8a1f-cf3685e96fd6)
-
+### Data received from preceding Service Task 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/686ec563-d0ba-4c19-93aa-61573fac7d47)
 
+### Call Client for Demo Request as a first Contact point and confirm 
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/a265666f-5692-4363-8a1f-cf3685e96fd6)
 
+### Execute Live Demo and confirm 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/a9aa1160-eeed-4b02-8443-cdcc0f0f5832)
+
+### Confirm Payment and new expiration date
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/1eddc0d5-fb21-49fc-a1fc-72aa25a75075)
+
+### Confirm Payment and Renew License 
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/1ab5f96c-2597-4aae-b460-fe227b730d8c)
 
 
 # Chatbot
