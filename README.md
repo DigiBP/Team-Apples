@@ -439,6 +439,9 @@ Picture to be added!!!!!!!!@cédric
 ### Confirm Payment and Renew License 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/1ab5f96c-2597-4aae-b460-fe227b730d8c)
 
+#### Data used from User task form in Service Task Scenario in Integromat
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/f4ce4549-6323-4956-9382-be9efdc1be3a)
+
 
 # Chatbot
 The Chatbot helps to solve any potential problem the customers may face throughout the sales cycle using an interactive frontend website. These are issues such as:
