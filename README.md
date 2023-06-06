@@ -271,11 +271,11 @@ Picture to be added!!!!!!!!@cédric
 
 
 ## 5. Sent free trial license
-- The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock relevant information.
+- The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock all the information from Camunda BPMN engine.
 - All the relevant information for sending the e-mail are retrieved with the module Google Sheet search a row. 
 - Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data for the next user task "Call client for Demo request". 
 - As part of the workflow, an email is automatically sent to the client immediately as soon as the preceding scenario is finished. 
-- The Custom Webhook assures a smooth and faster sending of the License Key E-mail.
+- The Custom Webhook assures sending of the E-mail with the free trial license immediately once data arrives. 
 - The E-mail content is composed using the retrieved details from the CRM system, and it includes the generated free license key.
 
 
@@ -363,7 +363,7 @@ Picture to be added!!!!!!!!@cédric
 
 ## 10. Sent License Key
 - With this scenario the license key is retrieved from the CRM and sent via E-mail to the client immediately as soon as the preceding scenario is finished. 
-- The Custom Webhook assures a smooth and faster sending of the License Key E-mail. 
+- The Custom Webhook assures sending of the License Key E-mail immediately once data arrives. 
 - The email content is composed using the retrieved details from the CRM system, and it includes the generated license key.
 
 ### Scenario
@@ -489,10 +489,9 @@ The following automations were done:
 ### Google Calendar, Google Forms, Google Sheets
 <img src="https://github.com/DigiBP/Team-Apples/blob/73a2b174b6e706d5762de81f862105f0b9e240ee/CHATBOT-Files/Screenshots/10.%20Google%20Calendar%2C%20Forms%2C%20Sheet.png"  width="90%" height="90%">
 
-# Conclusion 
-The process has been improved massively and if Ximiq would give the Group Apples the time used for each user task the Group could have calculated the 
-Flow Efficiency (%) = Value added Time   / Process Lead Time (total time needed to fulfill a customer order) 
-Looking at all the manual tasks that probably costed a lot of time the flow efficiency with the TOBE process is massivelly better than the AS-IS process. 
+# Conclusion
+The process has been improved massively and if Ximiq would give the Group Apples the exact time used for each user task the Group could have calculated the 
+Flow Efficiency (%) = Value added Time / Process Lead Time (total time needed to fulfill a customer order). Looking at all the manual tasks that probably costed a lot of time the flow efficiency with the TO-BE process would have costed Ximiq significantly less time than with the AS-IS process. Looking at the AS-IS process problem with no process in t
 
 
 
