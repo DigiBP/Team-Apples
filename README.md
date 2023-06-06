@@ -176,7 +176,9 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### Fetch and Lock and Complete Posts HTTP make a request modules 
 - Most of the below scenarios are used to communicate with a service task in Camunda BPMN engine. 
 - The communication is done within the module in Integromat called "HTTP - Make a request" in which the external worker is defined in the payload. 
-- The first HTTP module fetches and locks the data from Camunda BPMN engine. The payload looks like this:
+- The first HTTP module fetches and locks the data from Camunda BPMN engine. 
+- The topic name should be the same as in the external implementation topic name in the service task that needs to be triggered in the BPMN model.  
+- The payload looks like this:
 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/b7485668-dc4f-43ae-9668-d27ca5d50482)
 
@@ -190,6 +192,8 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### Message Post HTTP make a request modules
 - The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In the cases below, it is waiting for the message indicating the client's request for either, free trial license, yearly license or renewal of license. 
 - Once the message intermediate catch event is triggered, Camunda captures the event and continues with the workflow.
+- The HTTP make a request module should include the same message name as defined in the message intermatediate catch event in the BPMN model.  
+- The payload looks like this: 
 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/9b760304-51af-4ccf-9d5e-7aeb4133845d)
 
