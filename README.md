@@ -418,6 +418,10 @@ Picture to be added!!!!!!!!@cédric
 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/a265666f-5692-4363-8a1f-cf3685e96fd6)
 
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/686ec563-d0ba-4c19-93aa-61573fac7d47)
+
+
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/a9aa1160-eeed-4b02-8443-cdcc0f0f5832)
 
 
 # Chatbot
