@@ -36,7 +36,7 @@ The Sales Process is triggered by three Events:
 The first event automatically creates a new Lead in Ximiqs CRM-System. Since there’s no notification, the new leads must be checked. After the other two events, a new lead must be created. Then an initial email with the following content is sent: 
 
 - A link to book a live demo
-- Mention of the possibility to request a trial-License
+- Mention of the possibility to request a trial license
 - The pricing model
 
 If the customer requests a live demo, an appointment will be automatically generated. The live demo takes place. If the customer requests a trial license, the license will be sent to them. After 30 days, another reminder email including the price information is sent to the customer. If there is still no feedback, after 14 days, the lead is closed as lost.
@@ -52,10 +52,10 @@ When the Apples Group met with Ximiq, they discovered that their business proces
 ![AS-IS-PROCESS/01_AS-IS_Sales Process ADOIT RGfW.png](https://github.com/DigiBP/Team-Apples/blob/4d466a928f8c591dfe7c846aaeca9fe214f92d3c/AS-IS-PROCESS/01_AS-IS_Sales%20Process%20ADOIT%20RGfW.png)
 
 
-Description of AS-IS Process Elements, Problems and Possible Improvements
+Description of AS-IS Process Elements and Problems & Comments
 ========
 
-| Row | Picture | Description          | Problems & Possible Improvements          |
+| Row | Picture | Description          | Problems & Comments         |
 | --- | ------- | ---------------- | ---------------- |
 | 1   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS01.png](https://github.com/DigiBP/Team-Apples/blob/c359fb74a7a2e72c2f18677aa13f3012f2183d54/AS-IS-PROCESS/Screenshots-Process-Elements/ASIS01.png) | Potential customers can download the application in the Microsoft AppSource Marketplace. It can be installed and added to Microsoft Word but has to be activated by a license key before its usable. https://smp-prod-pb-cac.azurewebsites.net/en-us/product/office/WA200004614?tab=Overview&exp=ubp8   |  | 
 | 2   | ![AS-IS-PROCESS/SCREENSHOTS-PROCESS-ELEMENTS/ASIS02.png](https://github.com/DigiBP/Team-Apples/blob/c359fb74a7a2e72c2f18677aa13f3012f2183d54/AS-IS-PROCESS/Screenshots-Process-Elements/ASIS02.png) | Potential customers can request the application via the BOC-Marketplace. BOC is the company that develops ADOIT. This will generate an email sent to Ximiq. The following is the content of the email: Form of address, First Name, Last Name, Email, Organization, Country, Telephone, Messsage.  https://knowledge.boc-group.com/de/module/adoit-word-report-generator/ | This doesn’t automatically trigger the creation of a Lead in CRM | 
@@ -97,30 +97,31 @@ Description of AS-IS Process Elements, Problems and Possible Improvements
 
 
 # AS-IS Business Process Problems 
-When analysing the AS-IS process to do a lean process improvement several questions came up. 
-- First of all Ximiq has a lot of wastes in its sales process. 
-- Besides some automated tasks in the process most of the tasks are manually and the clients have no added value for themselves. 
-- The only value adding tasks in the process are the Demo done by the Consultant for the client, the license keys the client receives and the price information. 
-- There is a lot of transportation wast, wasted potentials of Consultants and Accountants, waiting time for the client and over-processing such as sending reminders to clients. 
-- The 3 trigger points seem not to be synchronized and needs to be merged at some point manually. 
-- Accounting seems to do everything manually and there is again a transportation between Accounting and Consulting department. 
-- Several tasks are not automated and the Consultants do not receive any reminders to make sure to contact the client after e.g. 30 days of trial phase. 
+When analyzing the AS-IS process to implement lean process improvement, several questions came up.
+- First of all, Ximiq has a lot of waste in its sales process. 
+- Besides some automated tasks in the process, most of the tasks are manual, and the clients have no added value for themselves. 
+- The only value-adding tasks in the process are the demos conducted by the consultants for the clients, the license keys the clients receive, and the price information.
+- There is a lot of transportation waste, wasted potential of consultants and accountants, waiting time for the clients, and over-processing, such as sending reminders to clients. 
+- The three trigger points do not seem to be synchronized and need to be merged manually at some point.
+- Accounting seems to handle everything manually, and there is transportation involved between the accounting and consulting departments. 
+- Several tasks are not automated, and the consultants do not receive any reminders to ensure they contact the client after, for example, a 30-day trial phase.
 
 ![AS-IS-PROCESS/02_Wastes in AS-IS Process.png](https://github.com/DigiBP/Team-Apples/blob/3dc488e1addcc066fbbe203cab2336ef6cbf9227/AS-IS-PROCESS/02_Wastes%20in%20AS-IS%20Process.png)
 
 
 # TO-BE Process Description
 
+This is the final TO-BE BPMN process solution created with a lean process improvement approach by the Apples Group. 
 
 ![TO-BE-PROCESS/01_TO-BE_Sales Process ADOIT Report Generator for Word.png](https://github.com/DigiBP/Team-Apples/blob/420ef52f89b387d3727006403113fcd08eb692cd/TO-BE-PROCESS/01_TO-BE_Sales%20Process%20ADOIT%20Report%20Generator%20for%20Word.png)
 
 
 
 
-Description of TO-BE Process Elements and Final Solutions
+Description of TO-BE Process Elements and Solution & Comments
 ========
 
-| Row | Picture | Description          | Solution / Comment          | 
+| Row | Picture | Description          | Solution & Comments          | 
 | --- | ------- | ---------------- | ---------------- | 
 | 1   |   ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE01.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE01.png) | During any partners download process the customer filled the contact form.   |  1. Start Event - Software request received https://github.com/DigiBP/Team-Apples#1-start-event---software-request-received| 
 | 2   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE02.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE02.png) |  Customers information is stored in CRM. | 1. Start Event - Software request received https://github.com/DigiBP/Team-Apples#1-start-event---software-request-received  | 
@@ -128,24 +129,24 @@ Description of TO-BE Process Elements and Final Solutions
 | 4   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE04.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE04.png) | The customer then either orders the  30 days free trial license or not. | Event based gateway waits until one of the messages get triggered. Without any message triggering the tocken will remain at the gateway. | 
 | 5   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE05.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE05.png) | Ximiq waits for 14 days for an answer from the customer.   | Going back to the client could be an option but that would stop the consultant from doing more important things such as executing Demos for existing clients.   | 
 | 6   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE06.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE06.png) | If the customer doesn’t reply the opportunity is closed in CRM.   | It is up to the consultant to decide when to contact clients personally but it does not make sense to run after every client to win the opportunity.  | 
-| 7   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE07.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE07.png) | The customer orders the 30 days free trial license.   | This is done via Google form and triggers the message intermediate catch event.  | 
+| 7   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE07.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE07.png) | The customer orders the 30 days free trial license.   | 3. Order free trial license key message https://github.com/DigiBP/Team-Apples#3-order-free-trial-license-key-message | 
 | 8   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE08.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE08.png) | A 30 days free trial license key is generated automatically.   | 4. Generate free trial license https://github.com/DigiBP/Team-Apples#4-generate-free-trial-license | 
 | 9   | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE09.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE09.png) | The 30 days free trial license key is generated and stored in CRM  | 4. Generate free trial license https://github.com/DigiBP/Team-Apples#4-generate-free-trial-license   | 
 | 10  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE10.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE10.png) | The 30 days free trial license key is automatically sent to the customer.  | 5. Sent free trial license https://github.com/DigiBP/Team-Apples#5-sent-free-trial-license |
 | 11  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE11.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE11.png) | Call client for Demo request is a User task.   | This User task includes all the details and needs to be completed before the tocken can move on. | 
-| 12  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE12.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE12.png) | The customer then either requests the Live Demo or not.  | This needs to be indicated in the User task in the Task list.  | 
+| 12  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE12.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE12.png) | The customer then either requests the Live Demo or not.  | This needs to be indicated in the User task in the Task list. In Camunda the Yes and No is defined with a Condition Expression that is refering to the field names from the previous user task "Live Demo executed?".   | 
 | 13  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE13.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE13.png) | Time passes until the scheduled Live-Demo.  | Until then the User task Live demo Executed remains in the task list of the consultant.  | 
 | 14  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE14.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE14.png) | A Ximiq consultant executes the Live-Demo in a video call.   | User task needs to be completed in the Task List.  | 
-| 15  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE15.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE15.png) | Time passes until the 30 days free trial license expires.  | Automatically calculated by the scenario 6.  | 
+| 15  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE15.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE15.png) | Time passes until the 30 days free trial license expires.  | Camunda is not doing much here as it is done utomatically by the scenario 6.  | 
 | 16  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE16.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE16.png) | A form to order the full license is sent automatically to the customer.  | 6. Sent License key order form URL https://github.com/DigiBP/Team-Apples#6-sent-license-key-order-form-url| 
 | 17  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE17.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE17.png) | The customer then either orders the full license or not.  | Event based gateway waits until one of the messages get triggered. Without any message triggering the tocken will remain at the gateway.  | 
 | 18  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE18.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE18.png) | Ximiq waits for 14 days for an answer from the customer.  | Going back to the client could be an option but that would stop the consultant from doing more important things such as executing Demos for existing clients.  | 
 | 19  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE19.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE19.png) | If the customer doesn’t reply the opportunity is closed in CRM. | It is up to the consultant to decide when to contact clients personally but it does not make sense to run after every client to win the opportunity. | 
-| 20  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE20.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE20.png) | The customers order is received via form.  | Row 20, Column 4 | 
-| 21  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE21.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE21.png) | The order is automatically registered in CRM. | Row 21, Column 4 | 
+| 20  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE20.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE20.png) | The customers order is received via form.  | 7. Order received message https://github.com/DigiBP/Team-Apples#7-order-received-message | 
+| 21  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE21.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE21.png) | The order is automatically registered in CRM. | 7. Order received message https://github.com/DigiBP/Team-Apples#7-order-received-message | 
 | 22  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE22.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE22.png) |  The price for the full license is calculated and an invoice is created and sent automatically.    | 8. Create Invoice and send https://github.com/DigiBP/Team-Apples#8-create-invoice-and-send| 
 | 23  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE23.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE23.png) | The consultant is checking the account manually. | This is a good control point to manage the revenues of each Consultant. The User Task needs to be completed. | 
-| 24  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE24.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE24.png) | The customer either paid or not. |  To be indicated in the User Task in the Task list. | 
+| 24  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE24.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE24.png) | The customer either paid or not. |  This needs to be indicated in the User task in the Task list. In Camunda the Yes and No is defined with a Condition Expression that is refering to the field names from the previous user task "Confirm payment". | 
 | 25  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE25.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE25.png) | Ximiq waits for 30 days for the payment.  |  It is up to the Consultant to call the client or not. | 
 | 26  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE26.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE26.png) | If the customer doesn’t pay the opportunity is closed.  | It is up to the Consultant to call the client or not, it always depends on the client portofolio situation of the Consultant. |
 | 27  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE27.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE27.png) | If the customer pays, the full license is generated. | 9. Generate license key https://github.com/DigiBP/Team-Apples#9-generate-license-key | 
@@ -155,11 +156,11 @@ Description of TO-BE Process Elements and Final Solutions
 | 31  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE31.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE31.png) | After 330 days a form to renew the license is automatically sent to the customer.  | 11. Sent license renewal form URL https://github.com/DigiBP/Team-Apples#11-sent-license-renewal-form-url | 
 | 32  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE32.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE32.png) | The customer then either requests the renewal or not. | Event based gateway waits until one of the messages get triggered. Without any message triggering the tocken will remain at the gateway. | 
 | 33  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE33.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE33.png) | Ximiq waits for 30 days for the order. | Going back to the client could be an option but that would stop the consultant from doing more important things such as executing Demos for existing clients. | 
-| 34  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE34.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE34.png) | If the customer didn’t order the software request process is finish.  | It is up to the Consultant to call the client or not, it always depends on the client portofolio situation of the Consultant. | 
-| 35  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE35.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE35.png) | The customer orders the renewal. | Message Intermediate catching event should be triggered. | 
-| 36  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE36.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE36.png) | Order is registered in CRM | Row 31, Column 4 | 
+| 34  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE34.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE34.png) | If the customer didn’t order the software request process is finish.  | It is up to the Consultant to call the client or not, it always depends on the client portfolio situation of the Consultant. | 
+| 35  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE35.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE35.png) | The customer orders the renewal. | 12. Renewing request received https://github.com/DigiBP/Team-Apples#12-renewing-request-received | 
+| 36  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE36.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE36.png) | Order is registered in CRM | 12. Renewing request received https://github.com/DigiBP/Team-Apples#12-renewing-request-received | 
 | 37  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE37.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE37.png) | A Consultant then manually checks the account and updates the date in the Task list. | Task list will notify automatically via Custom webhook the last scenario which will then trigger the service task "Confirm renewal" and write back the new expiry date into CRM | 
-| 38  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE38.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE38.png) | The customer the either pays or not | It is up to the Consultant to call the client or not, it always depends on the client portofolio situation of the Consultant. | 
+| 38  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE38.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE38.png) | The customer the either pays or not | In Camunda the Yes and No is defined with a Condition Expression that is refering to the field names from the previous user task "Client made payment?". | 
 | 39  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE39.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE39.png) | Ximiq waits for 30 days for the payment. | It is up to the Consultant to call the client or not, it always depends on the client portofolio situation of the Consultant. | 
 | 40  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE40.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE40.png) | If the customer doesn’t pay the software request process is finish.  | It is up to the Consultant to call the client or not, it always depends on the client portofolio situation of the Consultant. | 
 | 41  | ![TO-BE-PROCESS/BPMN-SCREENSHOTS/TOBE41.png](https://github.com/DigiBP/Team-Apples/blob/fd3b11aaf18135496621c8368adca24553044478/TO-BE-PROCESS/BPMN-Screenshots/TOBE41.png) |  The renewal is the automatically confirmed to the customer.   |  13. Confirm renewal https://github.com/DigiBP/Team-Apples#13-confirm-renewal   | 
@@ -170,7 +171,7 @@ In order to automate the above TO-BE BPMN process's service tasks and message ev
 
 In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker (here: IntegromatWorker) then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
 
-## Information for all Service Task scenarios
+## Pre-Information to the scenarios 
 
 ### Explanation Fetch and Lock and Complete HTTP make a request modules 
 - Most of the below scenarios are used to communicate with a service task in Camunda BPMN engine. 
@@ -199,6 +200,11 @@ In Integromat, scenarios are created using the process engine and added to the "
 ### Filter between modules 
 - This filter is making sure before the completion of the scenario and the service task the business key received from Camunda via HTTP module "make a request" is also sent back to Camunda with the correct data from the same business key. 
 ![image](https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8)
+
+### Custom Webhook registered in Camunda BPMN under the Sequence Flows 
+For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trigger immediate execution of the scenario upon data arrival. This is achieved using the Execution listener in the BPMN Camunda engine to facilitate communication between BPMN and the Integromat Worker. The exact URL from the Webhook scenario that needs to be triggered is determined through this process.
+
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/38634b94-df3d-4850-8d78-7d19735a3b2a)
 
 ## 1. Start Event - Software request received
 - When client decides to request the ADOIT software, they will fill in a Google Form as a starting point.
@@ -275,18 +281,17 @@ Picture to be added!!!!!!!!@cédric
 - All the relevant information for sending the e-mail are retrieved with the module Google Sheet search a row. 
 - Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data for the next user task "Call client for Demo request". 
 - As part of the workflow, an email is automatically sent to the client immediately as soon as the preceding scenario is finished. 
-- The Custom Webhook assures sending of the E-mail with the free trial license immediately once data arrives. 
 - The E-mail content is composed using the retrieved details from the CRM system, and it includes the generated free license key.
 
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/5. Send free trial license.png](https://github.com/DigiBP/Team-Apples/blob/52999f1baade0f6eb8c914de3e85cf57910ea5c7/TO-BE-PROCESS/MAKE-Screenshots/5.%20Send%20free%20trial%20license.png)
 
+
 ### E-mail Free Trial License Key
 - The e-mail always refers to the Chatbot in case the client has issues or questions they can get in touch with the Chatbot.
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/e0b465c7025875559349c3bf35189fb21940c24e/TO-BE-PROCESS/E-Mail-Schreenshots/05_Fee%20Trial%20License%20Key.png"  width="50%" height="50%">
-
 
 ## 6. Sent License key order form URL
 - The client has a 30-day free trial license and once it is expired this scenario calculates with the module "Tools" the number of remaining days. 
@@ -363,7 +368,6 @@ Picture to be added!!!!!!!!@cédric
 
 ## 10. Sent License Key
 - With this scenario the license key is retrieved from the CRM and sent via E-mail to the client immediately as soon as the preceding scenario is finished. 
-- The Custom Webhook assures sending of the License Key E-mail immediately once data arrives. 
 - The email content is composed using the retrieved details from the CRM system, and it includes the generated license key.
 
 ### Scenario
@@ -490,7 +494,7 @@ The following automations were done:
 <img src="https://github.com/DigiBP/Team-Apples/blob/73a2b174b6e706d5762de81f862105f0b9e240ee/CHATBOT-Files/Screenshots/10.%20Google%20Calendar%2C%20Forms%2C%20Sheet.png"  width="90%" height="90%">
 
 # Conclusion
-The process has been improved massively, and if Ximiq were to provide the Apples Group with the exact time used for each user task, the Group could calculate the Flow Efficiency (%), which is the Value Added Time divided by the Process Lead Time (the total time needed to fulfill a customer order). Considering the manual tasks that likely consumed a significant amount of time, the flow efficiency with the TO-BE process would have been much lower, and Ximiq would save considerably more in consultant salary costs compared to the AS-IS process. With the implementation of the Chatbot, Ximiq would save even more time by handling standard questions from clients. However, to maintain contact with the clients, certain user tasks are still important for communication and to identify any additional needs. The level of contact may not be as high as in the AS-IS process, but the consultant can still decide whether or not to get in touch with the client in order to win the opportunity. Ximiq consultants currently do not receive reminders to contact clients. However, with this solution, they will have a structured workflow that includes tasks and services to ensure timely client communication.
+The process has been improved massively, and if Ximiq were to provide the Apples Group with the exact time used for each user task, the Group could calculate the Flow Efficiency (%), which is the Value Added Time divided by the Process Lead Time (the total time needed to fulfill a customer order). Considering the manual tasks that likely consumed a significant amount of time, the flow efficiency with the TO-BE process would have been much lower, and Ximiq would save considerably more in consultant and accountant salary costs compared to the AS-IS process. With the implementation of the Chatbot, Ximiq would save even more time by handling standard questions from clients. However, to maintain contact with the clients, certain user tasks are still important for communication and to identify any additional needs. The level of contact may not be as high as in the AS-IS process, but the consultant can still decide whether or not to get in touch with the client in order to win the opportunity. Ximiq consultants currently do not receive reminders to contact clients. However, with this solution, they will have a structured workflow that includes tasks and services to ensure timely client communication.
 
 # Suggestions
 The solution, however, requires several changes from Ximiq's side, such as modifying the lead creation trigger points. The various providers should have the same link to a common form, enabling automatic updates in the CRM system. Another crucial aspect that has not been included in the solution due to the absence of real data and a connection is the integration of an email notification when the client makes a payment. Typically, banks send notifications that can be read using a module called "Gmail - Watch email" and subsequently processed within the workflow. Similarly, the Live Demo scheduling form could also be integrated into this BPMN workflow.
