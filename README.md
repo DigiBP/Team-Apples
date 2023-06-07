@@ -123,9 +123,7 @@ The Apples Group first defined the below steps required to fulfill a sales proce
 
 Looking at Ximiq, first they receive always a lead. Once the lead is entered into the system and the client is qualified to buy the product a trial phase starts and within this trial phase a demo takes place. Once this phase is closed the proposal to the client is done and the opporunity is either closed or lost. After the client has been won a recurring phase starts where the client has the chance to either renew their license or close the license key. These four parts came up then within the TO-BE process. 
 
-![image](https://github.com/DigiBP/Team-Apples/assets/127504199/b47138c0-7046-4d5d-b629-1cee92281d0a)
-
-![TO-BE-PROCESS/01_TO-BE_Sales Process ADOIT Report Generator for Word.png](https://github.com/DigiBP/Team-Apples/blob/420ef52f89b387d3727006403113fcd08eb692cd/TO-BE-PROCESS/01_TO-BE_Sales%20Process%20ADOIT%20Report%20Generator%20for%20Word.png)
+![TO-BE-PROCESS/03_TO-BE_Sales Process ADOIT Report Generator for Word.png](https://github.com/DigiBP/Team-Apples/blob/76f4a63d219ea28399f1914023020b566d122145/TO-BE-PROCESS/03_TO-BE_Sales%20Process%20ADOIT%20Report%20Generator%20for%20Word.png)
 
 Comparing the both AS-IS and TO-BE processes the Apples Group reduced from about 14 User tasks to only four and the rest became a Service task and could be handled automatically. 
 
