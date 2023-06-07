@@ -115,9 +115,9 @@ When analyzing the AS-IS process to implement lean process improvement, several 
 
 # TO-BE Process Description
 
-To faciliate the above business process a BPMN process has been modeled with a workflow behind. The process has been improved with a lean process improvement approach.
+To facilitate the above business process a lean improved BPMN process has been modeled with a workflow behind.
 
-The Apples Group first defined the below steps required to fullfil a sales process. 
+The Apples Group first defined the below steps required to fulfill a sales process. 
 
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/94f9c2c8-00d5-49ed-85f7-23336c92146e"  width="50%" height="50%">
 
