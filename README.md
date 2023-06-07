@@ -117,7 +117,7 @@ When analyzing the AS-IS process to implement lean process improvement, several 
 
 This is the final TO-BE BPMN process solution created with a lean process improvement approach by the Apples Group.We have focused on 5 different areas of the process. 
 
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/7f115d16-a7b2-4661-ba51-d9f67b78e016"  width="50%" height="50%">
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/b47138c0-7046-4d5d-b629-1cee92281d0a)
 
 ![TO-BE-PROCESS/01_TO-BE_Sales Process ADOIT Report Generator for Word.png](https://github.com/DigiBP/Team-Apples/blob/420ef52f89b387d3727006403113fcd08eb692cd/TO-BE-PROCESS/01_TO-BE_Sales%20Process%20ADOIT%20Report%20Generator%20for%20Word.png)
 
