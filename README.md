@@ -234,7 +234,7 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 - Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with invoking the first external services task "Sent free license key URL".
 
 ### Google Form
-<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png"  width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png"  width="40%" height="40%">
 
 ### Scenario
 ![TO-BE-PROCESS/MAKE-Screenshots/1. Start Event - Software request received.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/1.%20Start%20Event%20-%20Software%20request%20received.png)
