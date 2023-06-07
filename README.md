@@ -456,22 +456,22 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/686ec563-d0ba-4c19-93aa-61573fac7d47"  width="50%" height="50%">
 
 ### Call Client for Demo Request as a first Contact point and confirm 
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/a265666f-5692-4363-8a1f-cf3685e96fd6"   width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/a265666f-5692-4363-8a1f-cf3685e96fd6"   width="100%" height="100%">
 
 ### Execute Live Demo and confirm 
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/a9aa1160-eeed-4b02-8443-cdcc0f0f5832"   width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/a9aa1160-eeed-4b02-8443-cdcc0f0f5832"   width="100%" height="100%">
 
 ### Confirm Payment and new expiration date
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/1eddc0d5-fb21-49fc-a1fc-72aa25a75075"   width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/1eddc0d5-fb21-49fc-a1fc-72aa25a75075"   width="100%" height="100%">
 
 ### Confirm Payment and Renew License 
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/1ab5f96c-2597-4aae-b460-fe227b730d8c"   width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/1ab5f96c-2597-4aae-b460-fe227b730d8c"   width="100%" height="100%">
 
 #### Form Name in Camunda BPMN
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/6e3ef8b3-3e97-4acb-81ce-4e2ae9ca3ca5"   width="50%" height="50%">
 
 #### Data used from User task form in Service Task Scenario in Integromat
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/f4ce4549-6323-4956-9382-be9efdc1be3a"   width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/f4ce4549-6323-4956-9382-be9efdc1be3a"   width="30%" height="30%">
 
 
 # Chatbot
