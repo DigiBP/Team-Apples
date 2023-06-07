@@ -553,7 +553,7 @@ Artifacts:
 
 1. [BPMN-Files (AS-IS & TO-BE)](https://github.com/DigiBP/Team-Apples/tree/8f019e16a5874df54c8768ca8b76a117889c4a79/BPMN-Files)
 2. [MAKE-Scenario Blueprints (.json)](https://github.com/DigiBP/Team-Apples/tree/8f019e16a5874df54c8768ca8b76a117889c4a79/MAKE-Blueprint%20Exports)
-3. [Workflow-Documentation Video (download)](https://github.com/DigiBP/Team-Apples/blob/8f019e16a5874df54c8768ca8b76a117889c4a79/TO-BE-PROCESS/02_TO-BE_Sales%20Process%20Video%20Documentation.mp4)
+3. [Workflow-Documentation Video (download)](https://github.com/DigiBP/Team-Apples/blob/015341bc930ebb9fc0896294f01e1adcbce51222/TO-BE-PROCESS/02_TO-BE_Sales%20Process%20Video-Documentation.zip)
 5. [Chatbot-Documantation PPT (download)](https://github.com/DigiBP/Team-Apples/blob/8f019e16a5874df54c8768ca8b76a117889c4a79/CHATBOT-Files/ADOIT%20RGfW%20Chatbot%20documentation.pptx)
 6. [Chatbot-Documantation Video (download)](https://github.com/DigiBP/Team-Apples/blob/8f019e16a5874df54c8768ca8b76a117889c4a79/CHATBOT-Files/ADOIT%20RGfW%20Chatbot%20demonstration%20video.mp4)
 7. Final Presentation PPT: will be uploaded in Moodle and contains log-in details the google account used for the external services.
