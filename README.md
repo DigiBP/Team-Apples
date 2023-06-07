@@ -506,24 +506,28 @@ The following automations were done:
 - Provides an appointment scheduler using Google Calendar in case customer needs to reschedule or missed the live demo - integrated link
 
 ### WIX.com
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/0c24907d-58d2-46ef-81c1-fcb09d6d1bc5)
 
 The customer will see a user-friendly frontend which is desigend using Wix.com. The chatbot interface is fully managed by Kommunicate.io and it's embedded into Wix.com using HTML Coding.
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/7.%20wix.com.png"  width="90%" height="90%">
 
 ### Kommunicate.io
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/5a9dfc72-9570-420b-b619-6c57f7f5c4bc)
 
 Kommunicate.io manages the Chatbot interface between Wix.com and Google Dialogflow. We have managed to implement a smart way to handover chat conversations to a live agent should the customer request it or given words expressing discontent such as: “frustrated” or “urgent”
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/8.%20Kommunikate.io.png"  width="90%" height="90%">
 
 ### make.com
+<img alt="Make Logo" sizes="(max-width: 20%) 30vw, 20%" src="https://images.ctfassets.net/qqlj6g4ee76j/1k5wBPhbu5kXiaYlFWgEJE/1809be456ba9c4246f7c8fb5d23bd6ef/Make-Logo-RGB.svg" decoding="async" data-nimg="responsive" style="width: 20%; height: auto;">
 
 Using webhooks in make.com, we have managed to capture the Client ID which is then used to respond to queries in real-time. For example, should the customer forget about their trial license, they can ask the chatbot directly to provide it by using their Client IT. This is possible thanks to the feature “Response fulfillment” looks for and matches the Client ID in our Google Docs database. The customer receives an answer immediately in the chatbot, avoiding to contact a live agent.
 
 <img src="https://github.com/DigiBP/Team-Apples/blob/811e7d6c4fe3021648fd8a5305d04f5f5ad0b963/CHATBOT-Files/Screenshots/9.%20Dialogflow.png"  width="90%" height="90%">
 
 ### Dialogflow
+![image](https://github.com/DigiBP/Team-Apples/assets/127504199/53f04d12-4d58-4801-a275-d43d4142a550)
 
 Dialogflow is the natural language platform which makes the chatbot possible. We created more than 17 different intents to ensure the customer gets as many problems as possible solved directly in the chatbot without the need for contacting a live agent yet, we made sure that sentiments are well take into account so that a person can join the chat at anytime should the customer run into any “frustration”. Please see the demonstration video to explore this feature.
 
