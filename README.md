@@ -119,7 +119,7 @@ To facilitate the above business process a lean improved BPMN process has been m
 
 The Apples Group first defined the below steps required to fulfill a sales process. 
 
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/94f9c2c8-00d5-49ed-85f7-23336c92146e"  width="50%" height="50%">
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/94f9c2c8-00d5-49ed-85f7-23336c92146e"  width="30%" height="30%">
 
 Looking at Ximiq, first they receive always a lead. Once the lead is entered into the system and the client is qualified to buy the product a trial phase starts and within this trial phase a demo takes place. Once this phase is closed the proposal to the client is done and the opporunity is either closed or lost. After the client has been won a recurring phase starts where the client has the chance to either renew their license or close the license key. These four parts came up then within the TO-BE process. 
 
