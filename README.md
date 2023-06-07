@@ -467,11 +467,11 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 ### Confirm Payment and Renew License 
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/1ab5f96c-2597-4aae-b460-fe227b730d8c"   width="100%" height="100%">
 
-#### Form Name in Camunda BPMN
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/6e3ef8b3-3e97-4acb-81ce-4e2ae9ca3ca5"   width="50%" height="50%">
+#### Form Field Name in Camunda BPMN
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/6e3ef8b3-3e97-4acb-81ce-4e2ae9ca3ca5"   width="30%" height="30%">
 
 #### Data used from User task form in Service Task Scenario in Integromat
-<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/f4ce4549-6323-4956-9382-be9efdc1be3a"   width="30%" height="30%">
+<img src="https://github.com/DigiBP/Team-Apples/assets/127504199/f4ce4549-6323-4956-9382-be9efdc1be3a"   width="100%" height="100%">
 
 
 # Chatbot
