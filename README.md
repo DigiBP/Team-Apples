@@ -567,4 +567,4 @@ Artifacts:
 3. [Workflow-Documentation Video (download)](https://github.com/DigiBP/Team-Apples/blob/015341bc930ebb9fc0896294f01e1adcbce51222/TO-BE-PROCESS/02_TO-BE_Sales%20Process%20Video-Documentation.zip)
 5. [Chatbot-Documantation PPT (download)](https://github.com/DigiBP/Team-Apples/blob/8f019e16a5874df54c8768ca8b76a117889c4a79/CHATBOT-Files/ADOIT%20RGfW%20Chatbot%20documentation.pptx)
 6. [Chatbot-Documantation Video (download)](https://github.com/DigiBP/Team-Apples/blob/8f019e16a5874df54c8768ca8b76a117889c4a79/CHATBOT-Files/ADOIT%20RGfW%20Chatbot%20demonstration%20video.mp4)
-7. Final Presentation PPT: will be uploaded in Moodle and contains log-in details the google account used for the external services.
+7. [Final Presentation PPT](https://github.com/DigiBP/Team-Apples/blob/Group-Presentation/FINAL%20SUBMISSION%20Presentation.pdf)
