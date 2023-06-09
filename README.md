@@ -16,6 +16,12 @@
 <ul>
   <li>Charuta Pande</li>
 </ul>
+  Thanks also to:
+</a>
+<ul>
+  <li>Maja Spahic</li>
+  <li>Andreas Martin</li>
+</ul>
   
 # Introduction
 This document describes the contribution to the process from the company Ximiq AG as part of the course "Digitalization of Business Processes" at the University of Applied Sciences and Arts North-western Switzerland. 
