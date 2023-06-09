@@ -182,7 +182,7 @@ Description of TO-BE Process Elements and Solution & Comments
 
 In order to automate the above TO-BE BPMN process's service tasks and message events, Integromat was utilized to visually create, build, and automate the workflow. The workflow entails coordinating humans, resources, and information to achieve a specific objective. Each task or activity within the workflow relies on the successful completion of preceding tasks or the occurrence of specific events, such as receiving a lead from a potential client.
 
-In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker (here: IntegromatWorker) then queries the topic, locks the task, performs the necessary work, and completes the service task within Camunda BPMN. On the other hand, user tasks are directly handled by the BPMN engine.
+In Integromat, scenarios are created using the process engine and added to the "external task list". An external worker (here: IntegromatWorker) then queries the topic, locks the task, performs the necessary work, and completes the service task by communicating with Camunda BPMN engine. On the other hand, user tasks as well as some waiting times are directly handled by the BPMN engine.
 
 ## Pre-Information for the Scenarios 
 
@@ -200,10 +200,10 @@ In Integromat, scenarios are created using the process engine and added to the "
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/0f755b3a-0146-4d8c-8650-40a45f01f333"  width="50%" height="50%">
 
 
-- Once a service tasks is completed Camunda proceeds with the next user tasks, service task or waits for an event to happen. 
+- Once a service task is completed Camunda proceeds with the next user task, service task or waits for an event to happen. 
 
 ### Message Post HTTP make a request modules
-- The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In the cases below, it is waiting for the message indicating the client's request for either, free trial license, yearly license or renewal of license. 
+- The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In the scenarios further below, it is waiting for the message indicating the client's request for either, free trial license, yearly license or renewal of license. 
 - Once the message intermediate catch event is triggered, Camunda captures the event and continues with the workflow.
 - The HTTP make a request module should include the same message name as defined in the message intermatediate catch event in the BPMN model.  
 - The payload looks like this: 
@@ -219,7 +219,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8"  width="75%" height="75%">
 
 ### Custom Webhook registered in Camunda BPMN under the Sequence Flows 
-For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trigger immediate execution of the scenario upon data arrival. This is achieved using the Execution listener in the BPMN Camunda engine to facilitate communication between BPMN and the Integromat Worker. The exact URL from the Webhook scenario that needs to be triggered is determined through this process.
+For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trigger immediate execution of the scenario upon data arrival. This is achieved using the "Execution listener" in the BPMN Camunda engine to speed up the communication between BPMN and the external worker. The exact URL of the Custom Webhook module that needs to be notified is determined in the image below.
 
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/38634b94-df3d-4850-8d78-7d19735a3b2a"  width="30%" height="30%">
 
@@ -229,7 +229,7 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 - When a new row is detected in CRM, a process instantiation is triggered via a REST call. This means that an instance of a process model in Camunda is created to handle the workflow for the new data.
 - As part of the process instantiation, a new business key is generated. The business key is a unique identifier associated with the process instance and can be used for tracking or referencing purposes.
 - The information related to the new business key is then sent via an external worker to Camunda. The external worker acts as an interface between the external systems (such as the Google Sheet) and Camunda, allowing for the execution of specific tasks within the workflow.
-- Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with invoking the first external services task "Sent free license key URL".
+- Once Camunda receives the information about the new business key from the external worker, it can start managing the workflow according to the defined process model. The process instance can proceed with invoking the next external services task "Sent free license key URL".
 
 ### Google Form
 <img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/00_Starting_Form.png"  width="40%" height="40%">
