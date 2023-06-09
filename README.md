@@ -336,17 +336,15 @@ For scenarios [5](https://github.com/DigiBP/Team-Apples#5-sent-free-trial-licens
 - If the client decides to proceed with the one-year license key, they fill out a form indicating their intention.
 - The "Watch New Row" module detects the new row or entry in the CRM system.
 
-### Scenario
-![TO-BE-PROCESS/MAKE-Screenshots/7. Order received message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/7.%20Order%20received%20message.png)
-
 ### Google Form
 <img src="https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Forms-Screenshots/06_Ordering%20final%20License.png" width="50%" height="50%">
 
+### Scenario
+![TO-BE-PROCESS/MAKE-Screenshots/7. Order received message.png](https://github.com/DigiBP/Team-Apples/blob/53080c6a715c2e99104000f13f0dffe02d081155/TO-BE-PROCESS/MAKE-Screenshots/7.%20Order%20received%20message.png)
+
 ### CRM - Google Sheet License Ordering
-- The Invoice Number as well as the document ID is written into the CRM system in scenario 8 but in the below print screen it is already visible. 
-
+- The Invoice Number as well as the document ID is written into the CRM system in [scenario 8](https://github.com/DigiBP/Team-Apples#8-create-invoice-and-send) but in the below print screen it is already visible. 
 ![TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png](https://github.com/DigiBP/Team-Apples/blob/097a99c54c4f1473a525fd9840ff0b9ba86b0463/TO-BE-PROCESS/Google-Sheets-Screenshots/06_CRM.png)
-
 
 ## 8. Create Invoice and send
 - With the retrieved information, the scenario proceeds to create an Invoice Number, which is done with generating a unique identifier and using the same variable as in business key (b_key) creation. 
@@ -380,7 +378,7 @@ For scenarios [5](https://github.com/DigiBP/Team-Apples#5-sent-free-trial-licens
 
 ## 9. Generate license key
 - The client decides to purchase a license key after paying for it.
-- Once the payment is confirmed by the Consultant, a new license key is generated automatically. 
+- Once the payment is confirmed by the Consultant, a full year license key is generated automatically. 
 - The generated license key is then written back into the CRM system.
 - The license key is associated with the client's credentials in the CRM system, ensuring it is properly linked to the client's profile.
 
@@ -430,7 +428,7 @@ For scenarios [5](https://github.com/DigiBP/Team-Apples#5-sent-free-trial-licens
 
 
 ## 13. Confirm renewal
-- Within this scenario the immediate trigger is once data arrives from the previous event fetched and locked from Camuda engine. In this case it is a user task in which a new date is confirmed or not.
+- Within this scenario once data arrives from the previous user task completed, Camuda engine will notify the external listener and trigger immediately the scenario. In this case it is a user task in which a new date is confirmed or not.
 - If the Consultant confirms the renewal of the license then this scenario is formating the date and writting it back to the CRM system.
 - Once the previous modules are done the client receives within this scenario an automatic confirmation E-mail with the new expiration date. 
 - The E-mail content is composed using the retrieved details from the CRM system, and it includes the newly formated expiration date. 
