@@ -203,7 +203,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 - Once a service task is completed Camunda proceeds with the next user task, service task or waits for an event to happen. 
 
 ### Message Post HTTP make a request modules
-- The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In the scenarios further below, it is waiting for the message indicating the client's request for either, free trial license, yearly license or renewal of license. 
+- The message intermediate catch event in Camunda serves as a waiting state for a specific message to arrive. In the scenarios further below, it is waiting for the message indicating the client's request for either, [free trial license](https://github.com/DigiBP/Team-Apples#3-order-free-trial-license-key-message), [yearly license](https://github.com/DigiBP/Team-Apples#7-order-received-message), or [renewal of license](https://github.com/DigiBP/Team-Apples#12-renewing-request-received). 
 - Once the message intermediate catch event is triggered, Camunda captures the event and continues with the workflow.
 - The HTTP make a request module should include the same message name as defined in the message intermatediate catch event in the BPMN model.  
 - The payload looks like this: 
@@ -219,7 +219,7 @@ In Integromat, scenarios are created using the process engine and added to the "
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/85784a72-be94-433f-adef-99a1559c97f8"  width="75%" height="75%">
 
 ### Custom Webhook registered in Camunda BPMN under the Sequence Flows 
-For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trigger immediate execution of the scenario upon data arrival. This is achieved using the "Execution listener" in the BPMN Camunda engine to speed up the communication between BPMN and the external worker. The exact URL of the Custom Webhook module that needs to be notified is determined in the image below.
+For scenarios [5](https://github.com/DigiBP/Team-Apples#5-sent-free-trial-license), [10](https://github.com/DigiBP/Team-Apples#10-sent-license-key), and [13](https://github.com/DigiBP/Team-Apples#13-confirm-renewal), there are Custom Webhooks modules available to trigger immediate execution of the scenario upon data arrival. This is achieved using the "Execution listener" in the BPMN Camunda engine to speed up the communication between BPMN and the external worker. The exact URL of the Custom Webhook module that needs to be notified is determined in the image below.
 
 <img src="https://github.com/DigiBP/Team-Apples/assets/127504199/38634b94-df3d-4850-8d78-7d19735a3b2a"  width="30%" height="30%">
 
@@ -297,7 +297,7 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 
 
 ## 5. Sent free trial license
-- The process starts with an HTTP make a request step, where Integromate makes a request to fetch and lock all the information from Camunda BPMN engine.
+- Here a Custom Webhook is used to trigger the scenario as soon as data arrives from Camunda BPMN engine. 
 - All the relevant information for sending the e-mail are retrieved with the module Google Sheet search a row. 
 - Once the information is retrieved, Camunda proceeds with the workflow and uses the obtained data for the next user task "Call client for Demo request". 
 - As part of the workflow, an E-mail is automatically sent to the client immediately as soon as the preceding scenario is finished. 
@@ -389,6 +389,7 @@ For scenarios 5, 10, and 13, there are Custom Webhooks modules available to trig
 
 
 ## 10. Sent License Key
+- Here a Custom Webhook is used to trigger the scenario as soon as data arrives from Camunda BPMN engine. 
 - With this scenario the license key is retrieved from the CRM and sent via E-mail to the client immediately as soon as the preceding scenario is finished. 
 - The E-mail content is composed using the retrieved details from the CRM system, and it includes the generated license key.
 
